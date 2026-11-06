@@ -11,6 +11,18 @@ Claude Code で作ったプロジェクト・リポジトリ・Artifact ごと�
 - **作業タイムライン**: すべての作品の作業を日付順に表示
 - 検索、種類（リポジトリ / Artifact / ローカル）、カテゴリで絞り込み
 
+## メモ
+
+作品の詳細画面から、作品ごとにメモを書けます（追加・編集・削除）。メモは `data/records.json` の各作品の `memos` に GitHub 経由で保存されます。
+
+1. 右上の「メモの設定」を開く
+2. [GitHub のトークン作成ページ](https://github.com/settings/personal-access-tokens/new)で、Repository access を **Record だけ**、Permissions の **Contents を Read and write** にしてトークンを作る
+3. トークンを貼り付けて「登録」
+
+- トークンはそのブラウザの中にだけ保存されます。別の端末で書くときは、その端末でも登録します。
+- メモはサイトと同じく公開されます。
+- 保存後、公開サイトに反映されるまで1〜2分かかります（トークンを登録した端末ではすぐに表示されます）。
+
 ## 記録の追加のしかた
 
 `data/records.json` の `items` を編集して push するとサイトに反映されます。

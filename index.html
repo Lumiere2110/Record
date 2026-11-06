@@ -10,7 +10,10 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1>Record</h1>
+    <div class="title-row">
+      <h1>Record</h1>
+      <button class="btn" id="openSettings">メモの設定</button>
+    </div>
     <p class="lead">Claude Code で作ったプロジェクト・リポジトリ・Artifact の目的と作業の記録</p>
     <p class="updated" id="updated"></p>
   </div>
@@ -43,6 +46,28 @@
 <dialog id="detail" class="detail">
   <div class="detail-body" id="detailBody"></div>
   <form method="dialog"><button class="close" aria-label="閉じる">閉じる</button></form>
+</dialog>
+
+<dialog id="settings" class="detail">
+  <div class="detail-body">
+    <h2>メモの設定</h2>
+    <p>メモは GitHub の <code>data/records.json</code> に保存されます。保存するには、Record に書き込める GitHub のトークンをこの端末に登録します。</p>
+    <ol class="steps">
+      <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub のトークン作成ページ</a>を開く</li>
+      <li>Repository access で「Only select repositories」→ <b>Record</b> を選ぶ</li>
+      <li>Permissions の <b>Contents</b> を「Read and write」にする</li>
+      <li>作成したトークンを下に貼り付けて「登録」</li>
+    </ol>
+    <p class="memo-hint">トークンはこのブラウザの中だけに保存され、GitHub 以外には送られません。メモはサイトと同じく誰でも見られます。</p>
+    <p id="tokenState"></p>
+    <div class="token-row">
+      <input type="password" id="tokenInput" placeholder="github_pat_..." autocomplete="off" aria-label="GitHub トークン">
+      <button type="button" class="btn primary" id="tokenSave">登録</button>
+      <button type="button" class="btn" id="tokenClear">削除</button>
+    </div>
+    <p class="memo-status" id="settingsStatus" role="status"></p>
+  </div>
+  <form method="dialog"><button class="close">閉じる</button></form>
 </dialog>
 
 <footer class="wrap footer">

@@ -102,9 +102,36 @@ code { font-size: .9em; background: var(--chip-bg); padding: .1em .35em; border-
 .detail h3 { font-size: 1rem; margin: 18px 0 6px; }
 .detail .links { display: flex; flex-wrap: wrap; gap: 12px; font-size: .92rem; }
 .detail ol { list-style: none; padding: 0; margin: 0; }
-.detail li { padding: 8px 0; border-bottom: 1px solid var(--line); }
-.detail li time { display: block; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.detail form { padding: 12px 22px 18px; text-align: right; }
+.detail .logs li time { display: block; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.detail > form { padding: 12px 22px 18px; text-align: right; }
 .close { font: inherit; border: 1px solid var(--line); background: var(--chip-bg); color: var(--text); border-radius: 8px; padding: 6px 16px; cursor: pointer; }
+
+.title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.btn { font: inherit; font-size: .88rem; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 8px; padding: 5px 14px; cursor: pointer; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:disabled { opacity: .5; cursor: default; }
+.link { font: inherit; font-size: .8rem; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0 0 0 10px; }
+.link.danger { color: var(--muted); }
+.memo-count { color: var(--accent); }
+.notes { color: var(--muted); }
+
+.memos { list-style: none; padding: 0; margin: 0 0 10px; }
+.memo { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; background: var(--bg); }
+.memo.is-editing { border-color: var(--accent); }
+.memo-head { display: flex; justify-content: space-between; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.memo-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.memo-empty, .memo-hint { color: var(--muted); font-size: .88rem; }
+.memo-form textarea, .token-row input {
+  width: 100%; font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; resize: vertical;
+}
+.memo-actions { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 6px; }
+.memo-status { margin-right: auto; font-size: .85rem; color: var(--muted); }
+.memo-status.error { color: #c0392b; }
+.token-row { display: flex; gap: 8px; }
+.token-row input { flex: 1; min-width: 0; }
+.detail ol.steps { list-style: decimal; padding-left: 1.4em; }
+.detail .steps li, .detail .memo { border-bottom: 0; }
+.detail .logs li { padding: 8px 0; border-bottom: 1px solid var(--line); }
 
 .footer { color: var(--muted); font-size: .85rem; padding-top: 40px; padding-bottom: 40px; }
