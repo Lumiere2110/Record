@@ -183,7 +183,8 @@
       "links": { "repo": "https://github.com/Lumiere2110/mod-site", "site": "https://lumiere2110.github.io/mod-site/" },
       "log": [
         { "date": "2026-10-31", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "nouryoku 2.8.5〜2.9.0 を順に公開", "source": "GitHub" }
+        { "date": "2026-11-05", "summary": "nouryoku 2.8.5〜2.9.0 を順に公開", "source": "GitHub" },
+        { "date": "2026-11-06", "summary": "Nouryoku のカードに「📖 教科書」ボタン（能力mod 教科書へのリンク）を追加", "source": "Claude Code" }
       ]
     },
     {
