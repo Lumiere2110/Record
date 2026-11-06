@@ -8,11 +8,21 @@
       "category": "記録・ツール",
       "status": "active",
       "purpose": "Claude Code で作ったプロジェクト・リポジトリ・Artifact ごとの目的と作業内容を記録して見返すためのサイト。",
-      "tags": ["GitHub Pages", "記録"],
+      "tags": [
+        "GitHub Pages",
+        "記録"
+      ],
       "created": "2026-11-06",
-      "links": { "repo": "https://github.com/Lumiere2110/Record", "site": "https://lumiere2110.github.io/Record/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/Record",
+        "site": "https://lumiere2110.github.io/Record/"
+      },
       "log": [
-        { "date": "2026-11-06", "summary": "リポジトリを作成。一覧・作業タイムライン・検索と絞り込みのある記録サイトを作り、既存のリポジトリと Artifact を登録", "source": "Claude Code" }
+        {
+          "date": "2026-11-06",
+          "summary": "リポジトリを作成。一覧・作業タイムライン・検索と絞り込みのある記録サイトを作り、既存のリポジトリと Artifact を登録",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -22,16 +32,47 @@
       "category": "学習・クイズ",
       "status": "active",
       "purpose": "自分で登録した問題で遊ぶ一問一答クイズ。解説・タグ・CBT方式のテストで復習できる。",
-      "tags": ["HTML", "クイズ"],
+      "tags": [
+        "HTML",
+        "クイズ"
+      ],
       "created": "2026-10-27",
-      "links": { "repo": "https://github.com/Lumiere2110/ichimon-ittou-quiz", "site": "https://lumiere2110.github.io/ichimon-ittou-quiz/", "artifact": "https://claude.ai/artifact/4N2kwYzM1LpUq9Czw84XsD" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ichimon-ittou-quiz",
+        "site": "https://lumiere2110.github.io/ichimon-ittou-quiz/",
+        "artifact": "https://claude.ai/artifact/4N2kwYzM1LpUq9Czw84XsD"
+      },
       "log": [
-        { "date": "2026-10-27", "summary": "リポジトリを作成して公開", "source": "GitHub" },
-        { "date": "2026-11-02", "summary": "GAFA・物の部分の名前などの問題を追加、定規のつり穴の問題を削除", "source": "GitHub" },
-        { "date": "2026-11-03", "summary": "問題に解説とタグ（お気に入りなど）を付けられるようにし、収録393問すべてに解説を追加", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "電気・電子の問題を18問、DC-DCコンバータ・パワコン・インバータの問題を追加", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "タイトル画面・CBT方式のテスト・設定メニュー（サウンド・カラー・実績）を追加。DIYの略、p-ヒドロキシアゾベンゼンの構造式（画像付き）の問題を追加", "source": "GitHub" },
-        { "date": "2026-11-06", "summary": "パテントプールの問題を追加", "source": "GitHub" }
+        {
+          "date": "2026-10-27",
+          "summary": "リポジトリを作成して公開",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-02",
+          "summary": "GAFA・物の部分の名前などの問題を追加、定規のつり穴の問題を削除",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-03",
+          "summary": "問題に解説とタグ（お気に入りなど）を付けられるようにし、収録393問すべてに解説を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "電気・電子の問題を18問、DC-DCコンバータ・パワコン・インバータの問題を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "タイトル画面・CBT方式のテスト・設定メニュー（サウンド・カラー・実績）を追加。DIYの略、p-ヒドロキシアゾベンゼンの構造式（画像付き）の問題を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "パテントプールの問題を追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -41,13 +82,33 @@
       "category": "学習・クイズ",
       "status": "active",
       "purpose": "用語を選んで4択問題を解くクイズゲーム。用語・ジャンル・カテゴリは自分で指定したものを追加していく。",
-      "tags": ["JavaScript", "クイズ", "応用情報"],
+      "tags": [
+        "JavaScript",
+        "クイズ",
+        "応用情報"
+      ],
       "created": "2026-11-04",
-      "links": { "repo": "https://github.com/Lumiere2110/remember", "site": "https://lumiere2110.github.io/remember/", "path": "Desktop\\Claudeで作ったもの\\remember" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/remember",
+        "site": "https://lumiere2110.github.io/remember/",
+        "path": "Desktop\\Claudeで作ったもの\\remember"
+      },
       "log": [
-        { "date": "2026-11-04", "summary": "リポジトリを作成。応用情報の用語104語、ITパスポート・基本情報・応用情報レベルの用語、ジャンル「物理」とカテゴリ「電気・電子」（コンバータ・インバータ）を追加", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "問題画面をCBT方式に。タイトル画面・テスト・設定を追加、PCで画面を広く、戻るボタン・Esc・マウスのボタン4/5で戻れるように", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "応用情報レベルの用語89語にLv.3の問題を1問ずつ追加", "source": "GitHub" }
+        {
+          "date": "2026-11-04",
+          "summary": "リポジトリを作成。応用情報の用語104語、ITパスポート・基本情報・応用情報レベルの用語、ジャンル「物理」とカテゴリ「電気・電子」（コンバータ・インバータ）を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "問題画面をCBT方式に。タイトル画面・テスト・設定を追加、PCで画面を広く、戻るボタン・Esc・マウスのボタン4/5で戻れるように",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "応用情報レベルの用語89語にLv.3の問題を1問ずつ追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -57,12 +118,28 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "応用情報技術者試験向けの Anki 風暗記カードアプリ（PWA でスマホでも使える）。",
-      "tags": ["JavaScript", "PWA", "応用情報"],
+      "tags": [
+        "JavaScript",
+        "PWA",
+        "応用情報"
+      ],
       "created": "2026-10-04",
-      "links": { "repo": "https://github.com/Lumiere2110/ap-study-cards", "site": "https://lumiere2110.github.io/ap-study-cards/", "path": "Desktop\\Claudeで作ったもの\\ap-study-cards" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ap-study-cards",
+        "site": "https://lumiere2110.github.io/ap-study-cards/",
+        "path": "Desktop\\Claudeで作ったもの\\ap-study-cards"
+      },
       "log": [
-        { "date": "2026-10-04", "summary": "応用情報向けの Anki 風暗記カードアプリを作成", "source": "GitHub" },
-        { "date": "2026-10-28", "summary": "午後問題を含む問題集（310問）を内蔵し、デッキ名を直して315問すべて追加されるように修正", "source": "GitHub" }
+        {
+          "date": "2026-10-04",
+          "summary": "応用情報向けの Anki 風暗記カードアプリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-28",
+          "summary": "午後問題を含む問題集（310問）を内蔵し、デッキ名を直して315問すべて追加されるように修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -72,11 +149,22 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "タイピングで答える一問一答クイズゲーム。",
-      "tags": ["JavaScript", "タイピング", "クイズ"],
+      "tags": [
+        "JavaScript",
+        "タイピング",
+        "クイズ"
+      ],
       "created": "2026-10-07",
-      "links": { "repo": "https://github.com/Lumiere2110/typing-quiz", "site": "https://lumiere2110.github.io/typing-quiz/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/typing-quiz",
+        "site": "https://lumiere2110.github.io/typing-quiz/"
+      },
       "log": [
-        { "date": "2026-10-07", "summary": "タイピングクイズを作成。英語・国語・地理・法律・漫画アニメなどのカテゴリとIT試験用語・一般常識の問題を大量に追加、入力判定をゆるくするなど調整", "source": "GitHub" }
+        {
+          "date": "2026-10-07",
+          "summary": "タイピングクイズを作成。英語・国語・地理・法律・漫画アニメなどのカテゴリとIT試験用語・一般常識の問題を大量に追加、入力判定をゆるくするなど調整",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -86,12 +174,28 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "学術用語を打って覚えるタイピングゲーム。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-07",
-      "links": { "repo": "https://github.com/Lumiere2110/yougoda", "site": "https://lumiere2110.github.io/yougoda/", "artifact": "https://claude.ai/artifact/Y2ZfUmtBJQ73vzoMuKTLqP", "path": "Desktop\\Claudeで作ったもの\\yougoda" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/yougoda",
+        "site": "https://lumiere2110.github.io/yougoda/",
+        "artifact": "https://claude.ai/artifact/Y2ZfUmtBJQ73vzoMuKTLqP",
+        "path": "Desktop\\Claudeで作ったもの\\yougoda"
+      },
       "log": [
-        { "date": "2026-10-05", "summary": "Artifact 版を作成", "source": "Artifact" },
-        { "date": "2026-10-07", "summary": "GitHub に公開し、README のプレイURLを修正", "source": "GitHub" }
+        {
+          "date": "2026-10-05",
+          "summary": "Artifact 版を作成",
+          "source": "Artifact"
+        },
+        {
+          "date": "2026-10-07",
+          "summary": "GitHub に公開し、README のプレイURLを修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -101,11 +205,22 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "漢字と英単語のタイピングゲーム（5段階レベル・ミスの解説付き）。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-11",
-      "links": { "repo": "https://github.com/Lumiere2110/typing-dojo", "site": "https://lumiere2110.github.io/typing-dojo/", "artifact": "https://claude.ai/artifact/TDzuRxVe4oRqBUC9jmqJnv" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/typing-dojo",
+        "site": "https://lumiere2110.github.io/typing-dojo/",
+        "artifact": "https://claude.ai/artifact/TDzuRxVe4oRqBUC9jmqJnv"
+      },
       "log": [
-        { "date": "2026-10-11", "summary": "打鍵道場を作成し、問題数を各レベル15語から50語（合計500語）に増加", "source": "GitHub" }
+        {
+          "date": "2026-10-11",
+          "summary": "打鍵道場を作成し、問題数を各レベル15語から50語（合計500語）に増加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -115,11 +230,22 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "略語を見て正式名称を英語でタイプして当てるタイピングゲーム。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-12",
-      "links": { "repo": "https://github.com/Lumiere2110/ryakugo-da", "site": "https://lumiere2110.github.io/ryakugo-da/", "artifact": "https://claude.ai/artifact/Ugbmap5svQKiuFJc3XmMta" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ryakugo-da",
+        "site": "https://lumiere2110.github.io/ryakugo-da/",
+        "artifact": "https://claude.ai/artifact/Ugbmap5svQKiuFJc3XmMta"
+      },
       "log": [
-        { "date": "2026-10-12", "summary": "略語打を作成し、解説カードの表示を調整", "source": "GitHub" }
+        {
+          "date": "2026-10-12",
+          "summary": "略語打を作成し、解説カードの表示を調整",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -129,16 +255,47 @@
       "category": "ゲーム",
       "status": "active",
       "purpose": "ブロック崩し・オセロ・藪の中など、1台やオンラインで遊べるミニゲームを集めたサイト。",
-      "tags": ["HTML", "オンライン対戦"],
+      "tags": [
+        "HTML",
+        "オンライン対戦"
+      ],
       "created": "2026-09-21",
-      "links": { "repo": "https://github.com/Lumiere2110/game-hub", "site": "https://lumiere2110.github.io/game-hub/", "path": "Desktop\\Claudeで作ったもの\\my_web" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/game-hub",
+        "site": "https://lumiere2110.github.io/game-hub/",
+        "path": "Desktop\\Claudeで作ったもの\\my_web"
+      },
       "log": [
-        { "date": "2026-09-21", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-10-04", "summary": "じゃんけん・ブラックジャック・UNO・ワードウルフ・カタカナーシ・ウミガメのスープ・単語探偵・全員一致・ito を追加", "source": "GitHub" },
-        { "date": "2026-10-05", "summary": "藪の中・全員一致・スピード・UNO の遊びやすさを改善", "source": "GitHub" },
-        { "date": "2026-10-10", "summary": "カタカナーシに難しいお題200語と難易度選択、ウミガメのスープに22問と難易度フィルター、ぷよぷよの連鎖表示を修正", "source": "GitHub" },
-        { "date": "2026-10-11", "summary": "「かぐや姫はカンヨークを覚えたい」（慣用句説明の協力ゲーム）を追加", "source": "GitHub" },
-        { "date": "2026-10-13", "summary": "「あいうえバトル」（文字当てバトル）を追加", "source": "GitHub" }
+        {
+          "date": "2026-09-21",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-04",
+          "summary": "じゃんけん・ブラックジャック・UNO・ワードウルフ・カタカナーシ・ウミガメのスープ・単語探偵・全員一致・ito を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-05",
+          "summary": "藪の中・全員一致・スピード・UNO の遊びやすさを改善",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-10",
+          "summary": "カタカナーシに難しいお題200語と難易度選択、ウミガメのスープに22問と難易度フィルター、ぷよぷよの連鎖表示を修正",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-11",
+          "summary": "「かぐや姫はカンヨークを覚えたい」（慣用句説明の協力ゲーム）を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-13",
+          "summary": "「あいうえバトル」（文字当てバトル）を追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -148,13 +305,30 @@
       "category": "Web",
       "status": "active",
       "purpose": "自己紹介と作品集のポートフォリオサイト。",
-      "tags": ["HTML"],
+      "tags": [
+        "HTML"
+      ],
       "created": "2026-10-21",
-      "links": { "repo": "https://github.com/Lumiere2110/my_web", "site": "https://lumiere2110.github.io/my_web/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/my_web",
+        "site": "https://lumiere2110.github.io/my_web/"
+      },
       "log": [
-        { "date": "2026-10-21", "summary": "ポートフォリオサイトとマイクラ進捗トラッカーを追加", "source": "GitHub" },
-        { "date": "2026-10-27", "summary": "トップページと作品一覧を更新", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" }
+        {
+          "date": "2026-10-21",
+          "summary": "ポートフォリオサイトとマイクラ進捗トラッカーを追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-27",
+          "summary": "トップページと作品一覧を更新",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "作品一覧を更新",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -164,11 +338,20 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "Minecraft サーバー・データパック・プラグイン・Mod・アプリ・GitHub の作り方をまとめたノート。",
-      "tags": ["ドキュメント"],
+      "tags": [
+        "ドキュメント"
+      ],
       "created": "2026-10-03",
-      "links": { "repo": "https://github.com/Lumiere2110/learning-notes", "path": "Desktop\\Claudeで作ったもの\\learning-notes" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/learning-notes",
+        "path": "Desktop\\Claudeで作ったもの\\learning-notes"
+      },
       "log": [
-        { "date": "2026-10-03", "summary": "学習ノートを作成（GitHub・サーバー・データパック・プラグイン・Mod・アプリの作り方）", "source": "GitHub" }
+        {
+          "date": "2026-10-03",
+          "summary": "学習ノートを作成（GitHub・サーバー・データパック・プラグイン・Mod・アプリの作り方）",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -178,12 +361,26 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "自作 Minecraft Mod（NeoForge 26.3）を配布するサイト。",
-      "tags": ["HTML", "NeoForge"],
+      "tags": [
+        "HTML",
+        "NeoForge"
+      ],
       "created": "2026-10-31",
-      "links": { "repo": "https://github.com/Lumiere2110/mod-site", "site": "https://lumiere2110.github.io/mod-site/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/mod-site",
+        "site": "https://lumiere2110.github.io/mod-site/"
+      },
       "log": [
-        { "date": "2026-10-31", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "nouryoku 2.8.5〜2.9.0 を順に公開", "source": "GitHub" }
+        {
+          "date": "2026-10-31",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "nouryoku 2.8.5〜2.9.0 を順に公開",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -194,14 +391,36 @@
       "status": "active",
       "private": true,
       "purpose": "能力と技を使って戦う NeoForge 用 Minecraft Mod。リポジトリは非公開で、配布は自作Mod配布サイトから。",
-      "tags": ["Java", "NeoForge", "非公開リポジトリ"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "非公開リポジトリ"
+      ],
       "created": "2026-10-31",
-      "links": { "site": "https://lumiere2110.github.io/mod-site/" },
+      "links": {
+        "site": "https://lumiere2110.github.io/mod-site/"
+      },
       "log": [
-        { "date": "2026-10-31", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.8.5〜2.8.13: 跳躍・速射・ハイジャンプ・フラッシュ・瞬身・フロントアロー・チャージショット・重力のアイコン追加、ジャンプ台を強化", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.8.14〜2.8.15: 瞬身をストックスキルに、/weather で新しい天気、狙撃とアローレインを調整", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.9.0: 技キーR・技名表示・スロット複数選択、反転/反響/時間/怪盗/法律の調整と修正", "source": "GitHub" }
+        {
+          "date": "2026-10-31",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.8.5〜2.8.13: 跳躍・速射・ハイジャンプ・フラッシュ・瞬身・フロントアロー・チャージショット・重力のアイコン追加、ジャンプ台を強化",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.8.14〜2.8.15: 瞬身をストックスキルに、/weather で新しい天気、狙撃とアローレインを調整",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.9.0: 技キーR・技名表示・スロット複数選択、反転/反響/時間/怪盗/法律の調整と修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -212,11 +431,19 @@
       "status": "done",
       "private": true,
       "purpose": "魔法の武器を追加する Minecraft 26.3 NeoForge 用 Mod。",
-      "tags": ["Java", "NeoForge", "非公開リポジトリ"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "非公開リポジトリ"
+      ],
       "created": "2026-10-18",
       "links": {},
       "log": [
-        { "date": "2026-10-18", "summary": "Magic Weapons mod 1.0.0 を作成", "source": "GitHub" }
+        {
+          "date": "2026-10-18",
+          "summary": "Magic Weapons mod 1.0.0 を作成",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -226,11 +453,21 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "プラグインが使える Minecraft Paper 26.3 サーバーの設定。",
-      "tags": ["Paper", "サーバー"],
+      "tags": [
+        "Paper",
+        "サーバー"
+      ],
       "created": "2026-10-01",
-      "links": { "repo": "https://github.com/Lumiere2110/minecraft-paper-server", "path": "Desktop\\MinecraftServer" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/minecraft-paper-server",
+        "path": "Desktop\\MinecraftServer"
+      },
       "log": [
-        { "date": "2026-10-01", "summary": "Paper 26.3 サーバーの設定とプラグインを追加", "source": "GitHub" }
+        {
+          "date": "2026-10-01",
+          "summary": "Paper 26.3 サーバーの設定とプラグインを追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -241,12 +478,25 @@
       "status": "done",
       "private": true,
       "purpose": "Minecraft の Mod を管理するアプリ。Artifact 版（共有DB対応）を元にしている。",
-      "tags": ["JavaScript", "非公開リポジトリ"],
+      "tags": [
+        "JavaScript",
+        "非公開リポジトリ"
+      ],
       "created": "2026-09-24",
-      "links": { "artifact": "https://claude.ai/artifact/87Ac6ER9rVqyrskoAhkS92" },
+      "links": {
+        "artifact": "https://claude.ai/artifact/87Ac6ER9rVqyrskoAhkS92"
+      },
       "log": [
-        { "date": "2026-09-24", "summary": "Artifact 版を初回取り込み（共有DB対応・画像を別ドキュメントに分割）", "source": "GitHub" },
-        { "date": "2026-09-25", "summary": "Artifact を更新", "source": "Artifact" }
+        {
+          "date": "2026-09-24",
+          "summary": "Artifact 版を初回取り込み（共有DB対応・画像を別ドキュメントに分割）",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-09-25",
+          "summary": "Artifact を更新",
+          "source": "Artifact"
+        }
       ]
     },
     {
@@ -257,11 +507,20 @@
       "status": "done",
       "private": true,
       "purpose": "Minecraft Mod の整理アプリと、同期するデータファイル。",
-      "tags": ["JavaScript", "非公開リポジトリ"],
+      "tags": [
+        "JavaScript",
+        "非公開リポジトリ"
+      ],
       "created": "2026-09-24",
-      "links": { "path": "Desktop\\MinecraftServer\\mod-organizer" },
+      "links": {
+        "path": "Desktop\\MinecraftServer\\mod-organizer"
+      },
       "log": [
-        { "date": "2026-09-24", "summary": "アプリと同期データを作成し、GitHub 同期の認証ヘッダーを修正", "source": "GitHub" }
+        {
+          "date": "2026-09-24",
+          "summary": "アプリと同期データを作成し、GitHub 同期の認証ヘッダーを修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -271,9 +530,19 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "ネットワークとセキュリティを学ぶ学習ページ。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/TfUrEgUcJEP9FJDr8xkh1P" },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/TfUrEgUcJEP9FJDr8xkh1P"
+      },
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-ap-guide",
@@ -282,9 +551,20 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "応用情報技術者試験の対策をまとめた攻略ページ。",
-      "tags": ["Artifact", "応用情報"],
-      "links": { "artifact": "https://claude.ai/artifact/HqmQit219d4cJwLSxYYikT" },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact",
+        "応用情報"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/HqmQit219d4cJwLSxYYikT"
+      },
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-toeic",
@@ -293,9 +573,21 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "TOEIC の練習アプリ。ローカルに HTML 版もある。",
-      "tags": ["Artifact", "英語"],
-      "links": { "artifact": "https://claude.ai/artifact/7HgNLzrHDvLQ66fWLFRqhR", "path": "Desktop\\Claudeで作ったもの\\toeic-trainer.html" },
-      "log": [ { "date": "2026-09-15", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact",
+        "英語"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/7HgNLzrHDvLQ66fWLFRqhR",
+        "path": "Desktop\\Claudeで作ったもの\\toeic-trainer.html"
+      },
+      "log": [
+        {
+          "date": "2026-09-15",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-shijo",
@@ -304,9 +596,19 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "詩を書きためておくノート。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/4rUAtp9wFV2xARuPC4ooaP" },
-      "log": [ { "date": "2026-09-17", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/4rUAtp9wFV2xARuPC4ooaP"
+      },
+      "log": [
+        {
+          "date": "2026-09-17",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-daybook",
@@ -315,9 +617,19 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "日々のことを記録する日記帳。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/1jsHhWkxacwMaBoGcKrRCF" },
-      "log": [ { "date": "2026-09-17", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/1jsHhWkxacwMaBoGcKrRCF"
+      },
+      "log": [
+        {
+          "date": "2026-09-17",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-kakeibo",
@@ -326,9 +638,19 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "収入と支出を記録する家計簿。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/6aSBekuCPfrmhWbqxNG5Rr" },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/6aSBekuCPfrmhWbqxNG5Rr"
+      },
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-game-cashback",
@@ -337,9 +659,19 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "ゲーム購入時のポイント還元などを記録・集計するトラッカー。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/Y1Z1hTTHwk4gvSzqH3KwCY" },
-      "log": [ { "date": "2026-09-18", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/Y1Z1hTTHwk4gvSzqH3KwCY"
+      },
+      "log": [
+        {
+          "date": "2026-09-18",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-pc-bench",
@@ -348,9 +680,20 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "PC パーツのベンチマークを比べるページ。",
-      "tags": ["Artifact", "PC"],
-      "links": { "artifact": "https://claude.ai/artifact/9NZDNkpiaaim8VoqM7tA9M" },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact",
+        "PC"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/9NZDNkpiaaim8VoqM7tA9M"
+      },
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-unity-guide",
@@ -359,9 +702,20 @@
       "category": "ゲーム",
       "status": "done",
       "purpose": "Unity でゲームを作る手順をまとめたガイド。",
-      "tags": ["Artifact", "Unity"],
-      "links": { "artifact": "https://claude.ai/artifact/F7HWjsjizxuf1pS3RkAus2" },
-      "log": [ { "date": "2026-09-15", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "tags": [
+        "Artifact",
+        "Unity"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/F7HWjsjizxuf1pS3RkAus2"
+      },
+      "log": [
+        {
+          "date": "2026-09-15",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "local-minecraft-server",
@@ -370,9 +724,21 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "自宅の Minecraft サーバー本体と、バトロワ用・実験用データパック、サーバープラグインの開発環境。",
-      "tags": ["サーバー", "データパック", "プラグイン"],
-      "links": { "path": "Desktop\\MinecraftServer" },
-      "log": [ { "date": "2026-10-01", "summary": "Paper 26.3 サーバーとして設定（設定は minecraft-paper-server リポジトリにも保存）", "source": "Claude Code" } ]
+      "tags": [
+        "サーバー",
+        "データパック",
+        "プラグイン"
+      ],
+      "links": {
+        "path": "Desktop\\MinecraftServer"
+      },
+      "log": [
+        {
+          "date": "2026-10-01",
+          "summary": "Paper 26.3 サーバーとして設定（設定は minecraft-paper-server リポジトリにも保存）",
+          "source": "Claude Code"
+        }
+      ]
     },
     {
       "id": "local-mod-dev",
@@ -381,9 +747,41 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "Mod 開発の作業場所と完成した jar の置き場所（mob-battle、mod-dev、完成したmod）。Forge 開発環境は MinecraftModDev。",
-      "tags": ["Forge", "NeoForge"],
-      "links": { "path": "Desktop\\自作mod" },
+      "tags": [
+        "Forge",
+        "NeoForge"
+      ],
+      "links": {
+        "path": "Desktop\\自作mod"
+      },
       "log": []
+    },
+    {
+      "id": "my-notebook",
+      "name": "My notebook",
+      "type": "repo",
+      "category": "記録・ツール",
+      "status": "active",
+      "purpose": "メモや画像を自由に記録するためのノートサイト。人気のメモアプリ（カード型）を参考にし、入力した文字は自動変換せずそのまま保存する。",
+      "tags": [
+        "HTML",
+        "GitHub Pages",
+        "IndexedDB",
+        "メモ"
+      ],
+      "created": "2026-11-06",
+      "links": {
+        "repo": "https://github.com/Lumiere2110/My-notebook",
+        "site": "https://lumiere2110.github.io/My-notebook/",
+        "path": "Desktop\\Claudeで作ったもの\\My-notebook"
+      },
+      "log": [
+        {
+          "date": "2026-11-06",
+          "summary": "リポジトリを作成して公開。メモ・画像（追加/ドロップ/貼り付け）・チェックリスト・色・ラベル・固定・アーカイブ・ゴミ箱・検索・バックアップのあるノートサイトを作成",
+          "source": "Claude Code"
+        }
+      ]
     }
   ]
 }
