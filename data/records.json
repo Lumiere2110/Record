@@ -398,6 +398,105 @@
       "log": [
         { "date": "2026-11-06", "summary": "リポジトリを作成して公開。メモ・画像（追加/ドロップ/貼り付け）・チェックリスト・色・ラベル・固定・アーカイブ・ゴミ箱・検索・バックアップのあるノートサイトを作成", "source": "Claude Code" }
       ]
+    },
+    {
+      "id": "hostileall",
+      "name": "Hostile All mod",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "done",
+      "purpose": "すべての Mob をプレイヤーに敵対させる Minecraft 26.3 NeoForge 用 Mod（倒した Mob が5%で爆発、ドラゴンの卵を食べられる、村人がゾンビを攻撃して村人に戻す など）。シングルプレイ用。",
+      "tags": ["Java", "NeoForge"],
+      "created": "2026-10-12",
+      "links": { "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\hostile-all-mod" },
+      "log": [
+        { "date": "2026-10-12", "summary": "Hostile All mod 1.0.0 を作成", "source": "Claude Code" },
+        { "date": "2026-10-13", "summary": "1.4.0 まで更新（村人とゾンビ、魚・イカの陸上がり防止、ネコの攻撃力などを調整）", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "mobwars",
+      "name": "Mob Wars mod",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "done",
+      "purpose": "Mob 同士が攻撃し合い、プレイヤーにも敵対する Minecraft 26.3 NeoForge 用 Mod（Hostile All とは同時に使えない）。",
+      "tags": ["Java", "NeoForge"],
+      "created": "2026-10-12",
+      "links": { "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\mob-wars-mod" },
+      "log": [
+        { "date": "2026-10-12", "summary": "Mob Wars mod 1.0.0 を作成", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "shokugyou",
+      "name": "Shokugyou（職業）mod",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "active",
+      "purpose": "初めて入ったときに職業（剣士・アーチャー・白魔導士・黒魔導士・召喚士・忍者）を選び、ステータス・キャラレベル・職業レベル・スキルツリーで育てる Minecraft 26.3 NeoForge 用 Mod。職業は少しずつ増やす予定。",
+      "tags": ["Java", "NeoForge"],
+      "created": "2026-10-13",
+      "links": { "path": "Desktop\\自作mod\\開発環境\\shokugyou" },
+      "log": [
+        { "date": "2026-10-13", "summary": "職業 mod 1.0.0 を作成し、1.5.0 まで更新（ステータス、キャラ・職業レベル、スキルツリー、ネザースターでの職業変更、剣士の突進斬り）", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "battle",
+      "name": "Battle（1対1の対戦）mod",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "done",
+      "purpose": "/battle で1対1の PvP 対戦をする Minecraft 26.3 NeoForge 用 Mod（3分制限、本当には死なない、終わると元に戻る、戦績を保存）。",
+      "tags": ["Java", "NeoForge", "PvP"],
+      "created": "2026-10-16",
+      "links": { "path": "Desktop\\自作mod\\バトルmod関係" },
+      "log": [
+        { "date": "2026-10-16", "summary": "Battle mod 1.0.0 を作成", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "programming",
+      "name": "Programming（ゲーム内プログラミング）mod",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "done",
+      "purpose": "コンピューターとロボットのブロックを追加し、ゲームの中で簡単な言語のプログラムを書いてロボットを動かせる Minecraft 26.3 NeoForge 用 Mod。",
+      "tags": ["Java", "NeoForge", "プログラミング"],
+      "created": "2026-10-18",
+      "links": { "path": "Desktop\\自作mod\\開発環境\\programming" },
+      "log": [
+        { "date": "2026-10-18", "summary": "Programming mod 1.0.0 を作成（変数・if・while・for・関数・リスト・辞書が使える言語、ロボットの移動・採掘・設置、サンプルとヘルプ）", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "mod-dev-guide",
+      "name": "Mod開発ガイド",
+      "type": "local",
+      "category": "Minecraft",
+      "status": "done",
+      "purpose": "Mod 開発のやり方をまとめた HTML のガイド。",
+      "tags": ["HTML"],
+      "created": "2026-10-12",
+      "links": { "path": "Desktop\\自作mod\\Mod開発ガイド.html" },
+      "log": [
+        { "date": "2026-10-12", "summary": "Mod開発ガイドを作成", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "chrome-sidebar",
+      "name": "マイサイドバー（Chrome拡張）",
+      "type": "local",
+      "category": "記録・ツール",
+      "status": "active",
+      "purpose": "リンク集・メモ・ToDo・サイト表示をまとめた自分用の Chrome 拡張。画面の右端のボタンから開くサイドバーと、新しいタブのページ（時計・検索・リンク）を追加する。",
+      "tags": ["Chrome拡張", "JavaScript"],
+      "created": "2026-11-06",
+      "links": { "path": "Desktop\\自作mod\\modリポジトリ\\chrome-sidebar" },
+      "log": [
+        { "date": "2026-11-06", "summary": "マイサイドバーを作成し、1.9.0 まで更新（サイドバーを右端に、幅を変えられる、サイト表示と検索、メモの文字の大きさ・太さ、ToDo の期限・優先度・並べ替え）", "source": "Claude Code" }
+      ]
     }
   ]
 }
