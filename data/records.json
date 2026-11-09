@@ -174,7 +174,8 @@
         { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" },
         { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)", "source": "Claude Code" }
       ]
     },
     {
