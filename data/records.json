@@ -555,7 +555,8 @@
       "log": [
         { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "ポートフォリオサイト(my_web)の作品一覧にカードを追加し、ブラウザ版へ移動できるようにした", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "ポートフォリオサイト(my_web)の作品一覧にカードを追加し、ブラウザ版へ移動できるようにした", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "Windows アプリ版を zip にして GitHub Releases に v1.0.0 として公開し、README にダウンロードの案内を追加", "source": "Claude Code" }
       ]
     },
     {
