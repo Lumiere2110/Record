@@ -566,7 +566,8 @@
       "created": "2026-11-09",
       "links": { "repo": "https://github.com/Lumiere2110/freedom-land" },
       "log": [
-        { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" }
       ]
     }
   ]
