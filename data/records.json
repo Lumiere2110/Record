@@ -547,11 +547,26 @@
       "category": "ゲーム",
       "status": "active",
       "purpose": "夜空の浮島でクリスタルを集め、追ってくるトゲ玉を避けるブラウザ用の3Dアクションゲーム（Three.js製）。",
-      "tags": ["Three.js", "3Dゲーム", "Artifact"],
+      "tags": ["Three.js", "3Dゲーム", "Artifact", "Electron"],
       "created": "2026-11-09",
-      "links": { "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6" },
+      "links": { "repo": "https://github.com/Lumiere2110/ukishima-crystal", "site": "https://lumiere2110.github.io/ukishima-crystal/", "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6" },
       "log": [
-        { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした", "source": "Claude Code" }
+      ]
+    },
+    {
+      "id": "freedom-land",
+      "name": "Freedom Land",
+      "type": "repo",
+      "category": "ゲーム",
+      "status": "active",
+      "purpose": "みんなでオンライン対戦・協力プレイできるオリジナル3Dミニゲーム集（Godot製のアプリ）。ソースコードには初心者向けの日本語メモ付き。",
+      "tags": ["Godot", "GDScript", "3Dゲーム", "オンライン"],
+      "created": "2026-11-09",
+      "links": { "repo": "https://github.com/Lumiere2110/freedom-land" },
+      "log": [
+        { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" }
       ]
     }
   ]
