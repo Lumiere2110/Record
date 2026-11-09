@@ -539,6 +539,20 @@
       "log": [
         { "date": "2026-11-06", "summary": "マイサイドバーを作成し、1.9.0 まで更新（サイドバーを右端に、幅を変えられる、サイト表示と検索、メモの文字の大きさ・太さ、ToDo の期限・優先度・並べ替え）", "source": "Claude Code" }
       ]
+    },
+    {
+      "id": "ukishima-crystal",
+      "name": "浮島クリスタル",
+      "type": "artifact",
+      "category": "ゲーム",
+      "status": "active",
+      "purpose": "夜空の浮島でクリスタルを集め、追ってくるトゲ玉を避けるブラウザ用の3Dアクションゲーム（Three.js製）。",
+      "tags": ["Three.js", "3Dゲーム", "Artifact"],
+      "created": "2026-11-09",
+      "links": { "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6" },
+      "log": [
+        { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" }
+      ]
     }
   ]
 }
