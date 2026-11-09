@@ -172,7 +172,8 @@
         { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" },
         { "date": "2026-11-06", "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加", "source": "GitHub" },
         { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" },
-        { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" }
       ]
     },
     {
@@ -564,10 +565,11 @@
       "purpose": "みんなでオンライン対戦・協力プレイできるオリジナル3Dミニゲーム集（Godot製のアプリ）。ソースコードには初心者向けの日本語メモ付き。",
       "tags": ["Godot", "GDScript", "3Dゲーム", "オンライン"],
       "created": "2026-11-09",
-      "links": { "repo": "https://github.com/Lumiere2110/freedom-land" },
+      "links": { "repo": "https://github.com/Lumiere2110/freedom-land", "site": "https://github.com/Lumiere2110/freedom-land/releases/latest" },
       "log": [
         { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "GitHub Releases に v1.0.0 として FreedomLand.exe を公開し、README にダウンロードの案内を追加。ポートフォリオサイトからダウンロードページへ移動できるようにした", "source": "Claude Code" }
       ]
     }
   ]
