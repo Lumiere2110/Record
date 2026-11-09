@@ -176,7 +176,8 @@
         { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "Freedom Land のカードを2ボタンにし、「ブラウザ・スマホで遊ぶ」(GitHub Pages)と「アプリをダウンロード」を選べるようにした", "source": "Claude Code" }
+        { "date": "2026-11-10", "summary": "Freedom Land のカードを2ボタンにし、「ブラウザ・スマホで遊ぶ」(GitHub Pages)と「アプリをダウンロード」を選べるようにした", "source": "Claude Code" },
+        { "date": "2026-11-10", "summary": "Freedom Land のカードの説明を「パスワードでルームを作って、パソコンとスマホのブラウザでいっしょにオンライン対戦できる」に更新", "source": "Claude Code" }
       ]
     },
     {
@@ -581,7 +582,8 @@
         { "date": "2026-11-10", "summary": "スマホ対応: ブラウザ版を docs/ に書き出して GitHub Pages で公開(ひとり+CPU)。ホーム画面に追加するとアプリになる(PWA)。画面の移動スティック・ジャンプ・ダッシュボタン、縦向きの案内、日本語フォント同梱。ポーズメニュー(Esc/P/スタート/II)と CPU のつよさ(よわい・ふつう・つよい)も追加", "source": "Claude Code" },
         { "date": "2026-11-10", "summary": "ポーズ・CPUのつよさ入りの新しい exe を GitHub Releases に v1.2.0 として公開(最新版)", "source": "Claude Code" },
         { "date": "2026-11-10", "summary": "チーム5対5のレーンバトル「Bond」を追加。上・下レーンに2人ずつ+中央にエース、こうげきで敵をたおすとチームに得点(エースは2点)、5秒で基地から復活。ブラウザ版にも入れ、スマホに「こうげき」ボタンを追加", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "Bond 入りの新しい exe を GitHub Releases に v1.3.0 として公開(最新版)", "source": "Claude Code" }
+        { "date": "2026-11-10", "summary": "Bond 入りの新しい exe を GitHub Releases に v1.3.0 として公開(最新版)", "source": "Claude Code" },
+        { "date": "2026-11-10", "summary": "「プレイ」でタイトルの空島に行き、ポータルでゲームを選ぶ形に変更。「オンライン」はルームを作成(6文字のパスワードを表示)/ルームに参加(パスワード入力)に。通信を ENet から WebRTC(接続の受け渡しは公開 MQTT ブローカー)に変え、ブラウザ版(スマホ)もオンライン対戦でき、パソコン版と同じルームで遊べるようにした", "source": "Claude Code" }
       ]
     }
   ]
