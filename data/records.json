@@ -171,7 +171,8 @@
         { "date": "2026-10-27", "summary": "トップページと作品一覧を更新", "source": "GitHub" },
         { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" },
         { "date": "2026-11-06", "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加", "source": "GitHub" },
-        { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" }
+        { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" },
+        { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" }
       ]
     },
     {
