@@ -575,7 +575,8 @@
         { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "GitHub Releases に v1.0.0 として FreedomLand.exe を公開し、README にダウンロードの案内を追加。ポートフォリオサイトからダウンロードページへ移動できるようにした", "source": "Claude Code" },
         { "date": "2026-11-10", "summary": "ミニゲーム「浮島クリスタル」を削除し、新しいミニゲーム「ぐるぐるバー」(回るバーをジャンプでよける対戦)を追加。タイトル画面を作り直し、「プレイ」でゲーム一覧(ひとり+CPUですぐ遊べる)、「オンライン」で部屋を作る・入るを選べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "新しい exe を GitHub Releases に v1.1.0 として公開(ダウンロードページの最新版を更新)", "source": "Claude Code" }
+        { "date": "2026-11-10", "summary": "新しい exe を GitHub Releases に v1.1.0 として公開(ダウンロードページの最新版を更新)", "source": "Claude Code" },
+        { "date": "2026-11-10", "summary": "浮島クリスタルが入っていた古いリリース v1.0.0 とそのタグを削除。ダウンロードページは v1.1.0 だけになった", "source": "Claude Code" }
       ]
     }
   ]
