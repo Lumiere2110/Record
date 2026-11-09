@@ -175,7 +175,8 @@
         { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)", "source": "Claude Code" },
+        { "date": "2026-11-10", "summary": "Freedom Land のカードを2ボタンにし、「ブラウザ・スマホで遊ぶ」(GitHub Pages)と「アプリをダウンロード」を選べるようにした", "source": "Claude Code" }
       ]
     },
     {
@@ -569,14 +570,15 @@
       "purpose": "みんなでオンライン対戦・協力プレイできるオリジナル3Dミニゲーム集（Godot製のアプリ）。ソースコードには初心者向けの日本語メモ付き。",
       "tags": ["Godot", "GDScript", "3Dゲーム", "オンライン"],
       "created": "2026-11-09",
-      "links": { "repo": "https://github.com/Lumiere2110/freedom-land", "site": "https://github.com/Lumiere2110/freedom-land/releases/latest" },
+      "links": { "repo": "https://github.com/Lumiere2110/freedom-land", "site": "https://lumiere2110.github.io/freedom-land/" },
       "log": [
         { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" },
         { "date": "2026-11-09", "summary": "GitHub Releases に v1.0.0 として FreedomLand.exe を公開し、README にダウンロードの案内を追加。ポートフォリオサイトからダウンロードページへ移動できるようにした", "source": "Claude Code" },
         { "date": "2026-11-10", "summary": "ミニゲーム「浮島クリスタル」を削除し、新しいミニゲーム「ぐるぐるバー」(回るバーをジャンプでよける対戦)を追加。タイトル画面を作り直し、「プレイ」でゲーム一覧(ひとり+CPUですぐ遊べる)、「オンライン」で部屋を作る・入るを選べるようにした", "source": "Claude Code" },
         { "date": "2026-11-10", "summary": "新しい exe を GitHub Releases に v1.1.0 として公開(ダウンロードページの最新版を更新)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "浮島クリスタルが入っていた古いリリース v1.0.0 とそのタグを削除。ダウンロードページは v1.1.0 だけになった", "source": "Claude Code" }
+        { "date": "2026-11-10", "summary": "浮島クリスタルが入っていた古いリリース v1.0.0 とそのタグを削除。ダウンロードページは v1.1.0 だけになった", "source": "Claude Code" },
+        { "date": "2026-11-10", "summary": "スマホ対応: ブラウザ版を docs/ に書き出して GitHub Pages で公開(ひとり+CPU)。ホーム画面に追加するとアプリになる(PWA)。画面の移動スティック・ジャンプ・ダッシュボタン、縦向きの案内、日本語フォント同梱。ポーズメニュー(Esc/P/スタート/II)と CPU のつよさ(よわい・ふつう・つよい)も追加", "source": "Claude Code" }
       ]
     }
   ]
