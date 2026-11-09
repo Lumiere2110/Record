@@ -173,7 +173,8 @@
         { "date": "2026-11-06", "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加", "source": "GitHub" },
         { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" },
         { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" }
       ]
     },
     {
@@ -553,7 +554,8 @@
       "links": { "repo": "https://github.com/Lumiere2110/ukishima-crystal", "site": "https://lumiere2110.github.io/ukishima-crystal/", "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6" },
       "log": [
         { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした", "source": "Claude Code" }
+        { "date": "2026-11-09", "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "ポートフォリオサイト(my_web)の作品一覧にカードを追加し、ブラウザ版へ移動できるようにした", "source": "Claude Code" }
       ]
     },
     {
