@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "items": [
     {
       "id": "record",
@@ -63,6 +63,21 @@
       "log": [
         { "date": "2026-10-04", "summary": "応用情報向けの Anki 風暗記カードアプリを作成", "source": "GitHub" },
         { "date": "2026-10-28", "summary": "午後問題を含む問題集（310問）を内蔵し、デッキ名を直して315問すべて追加されるように修正", "source": "GitHub" }
+      ]
+    },
+    {
+      "id": "shiken",
+      "name": "試験（過去問CBT）",
+      "type": "repo",
+      "category": "学習・クイズ",
+      "status": "active",
+      "purpose": "いろいろな試験の過去問を「ジャンル → 試験の種類 → 年度」で選び、パソコン上で受験する CBT 方式で解いて練習するための Web アプリ。",
+      "tags": ["HTML", "JavaScript", "CBT", "過去問"],
+      "created": "2026-11-09",
+      "links": { "repo": "https://github.com/Lumiere2110/shiken" },
+      "log": [
+        { "date": "2026-11-09", "summary": "過去問CBTアプリを作成。問題一覧パネル・見直しマーク・制限時間タイマー・本番/練習モード・シャッフル・分野別の採点結果・間違えた問題の再挑戦・受験履歴を付け、ITパスポート・基本情報・応用情報のオリジナルのサンプル問題を入れた", "source": "Claude Code" },
+        { "date": "2026-11-09", "summary": "ITパスポート試験 令和8年度 公開問題（全100問・制限時間120分）を追加。解説は自分で作成", "source": "Claude Code" }
       ]
     },
     {
@@ -154,7 +169,9 @@
       "log": [
         { "date": "2026-10-21", "summary": "ポートフォリオサイトとマイクラ進捗トラッカーを追加", "source": "GitHub" },
         { "date": "2026-10-27", "summary": "トップページと作品一覧を更新", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" }
+        { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" },
+        { "date": "2026-11-06", "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加", "source": "GitHub" },
+        { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" }
       ]
     },
     {
