@@ -8,22 +8,57 @@
       "category": "記録・ツール",
       "status": "active",
       "purpose": "Claude Code で作ったプロジェクト・リポジトリ・Artifact ごとの目的と作業内容を記録して見返すためのサイト。",
-      "tags": ["GitHub Pages", "記録"],
+      "tags": [
+        "GitHub Pages",
+        "記録"
+      ],
       "created": "2026-11-06",
-      "links": { "repo": "https://github.com/Lumiere2110/Record", "site": "https://lumiere2110.github.io/Record/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/Record",
+        "site": "https://lumiere2110.github.io/Record/"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 59.3 }, { "name": "CSS", "pct": 27.3 }, { "name": "HTML", "pct": 13.4 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 59.3
+          },
+          {
+            "name": "CSS",
+            "pct": 27.3
+          },
+          {
+            "name": "HTML",
+            "pct": 13.4
+          }
+        ],
         "summary": "フレームワークを使わない静的サイト。記録は JSON 1ファイルにまとめ、JavaScript が読み込んで一覧・タイムライン・詳細を描く。メモは GitHub の API で records.json に直接書き込む。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "画面の骨組み（ヘッダー・一覧・詳細とメモ設定のダイアログ）" },
-          { "path": "js/app.js", "desc": "データの読み込み・検索と絞り込み・描画・メモの保存" },
-          { "path": "css/style.css", "desc": "見た目（ダークモード対応）" },
-          { "path": "data/records.json", "desc": "すべての記録（作品・作業ログ・メモ・ソースの説明）" }
+          {
+            "path": "index.html",
+            "desc": "画面の骨組み（ヘッダー・一覧・詳細とメモ設定のダイアログ）"
+          },
+          {
+            "path": "js/app.js",
+            "desc": "データの読み込み・検索と絞り込み・描画・メモの保存"
+          },
+          {
+            "path": "css/style.css",
+            "desc": "見た目（ダークモード対応）"
+          },
+          {
+            "path": "data/records.json",
+            "desc": "すべての記録（作品・作業ログ・メモ・ソースの説明）"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-06", "summary": "リポジトリを作成。一覧・作業タイムライン・検索と絞り込みのある記録サイトを作り、既存のリポジトリと Artifact を登録", "source": "Claude Code" }
+        {
+          "date": "2026-11-06",
+          "summary": "リポジトリを作成。一覧・作業タイムライン・検索と絞り込みのある記録サイトを作り、既存のリポジトリと Artifact を登録",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -33,26 +68,75 @@
       "category": "学習・クイズ",
       "status": "active",
       "purpose": "自分で登録した問題で遊ぶ一問一答クイズ。解説・タグ・CBT方式のテストで復習できる。",
-      "tags": ["HTML", "クイズ"],
+      "tags": [
+        "HTML",
+        "クイズ"
+      ],
       "created": "2026-10-27",
-      "links": { "repo": "https://github.com/Lumiere2110/ichimon-ittou-quiz", "site": "https://lumiere2110.github.io/ichimon-ittou-quiz/", "artifact": "https://claude.ai/artifact/4N2kwYzM1LpUq9Czw84XsD" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ichimon-ittou-quiz",
+        "site": "https://lumiere2110.github.io/ichimon-ittou-quiz/",
+        "artifact": "https://claude.ai/artifact/4N2kwYzM1LpUq9Czw84XsD"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 69.4 }, { "name": "HTML", "pct": 30.4 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 69.4
+          },
+          {
+            "name": "HTML",
+            "pct": 30.4
+          }
+        ],
         "summary": "ビルド不要の1ページアプリ。画面と処理は index.html にまとめ、問題データだけ questions.js に分けている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "画面・出題・CBT方式のテスト・設定（サウンド・カラー・実績）の処理" },
-          { "path": "questions.js", "desc": "収録問題・解説・タグのデータ" },
-          { "path": "build.sh", "desc": "ビルド用のシェルスクリプト" }
+          {
+            "path": "index.html",
+            "desc": "画面・出題・CBT方式のテスト・設定（サウンド・カラー・実績）の処理"
+          },
+          {
+            "path": "questions.js",
+            "desc": "収録問題・解説・タグのデータ"
+          },
+          {
+            "path": "build.sh",
+            "desc": "ビルド用のシェルスクリプト"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-27", "summary": "リポジトリを作成して公開", "source": "GitHub" },
-        { "date": "2026-11-02", "summary": "GAFA・物の部分の名前などの問題を追加、定規のつり穴の問題を削除", "source": "GitHub" },
-        { "date": "2026-11-03", "summary": "問題に解説とタグ（お気に入りなど）を付けられるようにし、収録393問すべてに解説を追加", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "電気・電子の問題を18問、DC-DCコンバータ・パワコン・インバータの問題を追加", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "タイトル画面・CBT方式のテスト・設定メニュー（サウンド・カラー・実績）を追加。DIYの略、p-ヒドロキシアゾベンゼンの構造式（画像付き）の問題を追加", "source": "GitHub" },
-        { "date": "2026-11-06", "summary": "パテントプールの問題を追加", "source": "GitHub" }
+        {
+          "date": "2026-10-27",
+          "summary": "リポジトリを作成して公開",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-02",
+          "summary": "GAFA・物の部分の名前などの問題を追加、定規のつり穴の問題を削除",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-03",
+          "summary": "問題に解説とタグ（お気に入りなど）を付けられるようにし、収録393問すべてに解説を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "電気・電子の問題を18問、DC-DCコンバータ・パワコン・インバータの問題を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "タイトル画面・CBT方式のテスト・設定メニュー（サウンド・カラー・実績）を追加。DIYの略、p-ヒドロキシアゾベンゼンの構造式（画像付き）の問題を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "パテントプールの問題を追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -62,30 +146,94 @@
       "category": "学習・クイズ",
       "status": "active",
       "purpose": "用語を選んで4択問題を解くクイズゲーム。用語・ジャンル・カテゴリは自分で指定したものを追加していく。",
-      "tags": ["JavaScript", "クイズ", "応用情報"],
+      "tags": [
+        "JavaScript",
+        "クイズ",
+        "応用情報"
+      ],
       "created": "2026-11-04",
-      "links": { "repo": "https://github.com/Lumiere2110/remember", "site": "https://lumiere2110.github.io/remember/", "path": "Desktop\\Claudeで作ったもの\\remember" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/remember",
+        "site": "https://lumiere2110.github.io/remember/",
+        "path": "Desktop\\Claudeで作ったもの\\remember"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 97.2 }, { "name": "CSS", "pct": 2.7 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 97.2
+          },
+          {
+            "name": "CSS",
+            "pct": 2.7
+          }
+        ],
         "summary": "ビルド不要の Web アプリ。処理は js/app.js、用語と問題は data/ の JavaScript ファイルにデータとして持つ。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "ファイルを読み込むだけの最小の HTML" },
-          { "path": "js/app.js", "desc": "画面の切り替え・4択の出題・テスト・設定" },
-          { "path": "data/terms.js", "desc": "ジャンル・カテゴリ別の用語と問題" },
-          { "path": "data/extra.js", "desc": "追加した用語と問題（extra2.js・extra3.js も同じ）" },
-          { "path": "css/style.css", "desc": "見た目" }
+          {
+            "path": "index.html",
+            "desc": "ファイルを読み込むだけの最小の HTML"
+          },
+          {
+            "path": "js/app.js",
+            "desc": "画面の切り替え・4択の出題・テスト・設定"
+          },
+          {
+            "path": "data/terms.js",
+            "desc": "ジャンル・カテゴリ別の用語と問題"
+          },
+          {
+            "path": "data/extra.js",
+            "desc": "追加した用語と問題（extra2.js・extra3.js も同じ）"
+          },
+          {
+            "path": "css/style.css",
+            "desc": "見た目"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-04", "summary": "リポジトリを作成。応用情報の用語104語、ITパスポート・基本情報・応用情報レベルの用語、ジャンル「物理」とカテゴリ「電気・電子」（コンバータ・インバータ）を追加", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "問題画面をCBT方式に。タイトル画面・テスト・設定を追加、PCで画面を広く、戻るボタン・Esc・マウスのボタン4/5で戻れるように", "source": "GitHub" },
-        { "date": "2026-11-04", "summary": "応用情報レベルの用語89語にLv.3の問題を1問ずつ追加", "source": "GitHub" },
-        { "date": "2026-11-10", "summary": "タイトルに「単語カード」を追加。自分で単語帳を複数作り、単語の登録・編集・削除・入れなおし、ゲームの用語からの追加、カードをめくって覚える画面（覚えた／まだ、まだの単語だけやり直し）ができる", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "単語カードに「意味を自動入力」ボタンを追加。ゲームの用語データ、なければ Wikipedia の要約から意味を入れる", "source": "Claude Code" },
-        { "date": "2026-11-11", "summary": "用語を58語・問題を116問追加（172語・299問 → 230語・415問）。新しいカテゴリ「AI・データ活用」も追加", "source": "Claude Code" },
-        { "date": "2026-11-13", "summary": "テストで制限時間のあり・なしと、1問ずつ答え合わせを選べるように。ITパスポートレベルの問題を100問追加（用語25語の新設を含む。255語・515問に）し、ITパスポートのテストが本番と同じ100問・120分で受けられるように", "source": "Claude Code" },
-        { "date": "2026-11-13", "summary": "用語を68語・問題を136問追加（CSMA/CD・SNMP・ロールバック・挿入ソート・GPU・要件定義・損益計算書・生成AI など、テクノロジ・マネジメント・ストラテジの各分野。323語・650問に）", "source": "Claude Code" }
+        {
+          "date": "2026-11-04",
+          "summary": "リポジトリを作成。応用情報の用語104語、ITパスポート・基本情報・応用情報レベルの用語、ジャンル「物理」とカテゴリ「電気・電子」（コンバータ・インバータ）を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "問題画面をCBT方式に。タイトル画面・テスト・設定を追加、PCで画面を広く、戻るボタン・Esc・マウスのボタン4/5で戻れるように",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-04",
+          "summary": "応用情報レベルの用語89語にLv.3の問題を1問ずつ追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "タイトルに「単語カード」を追加。自分で単語帳を複数作り、単語の登録・編集・削除・入れなおし、ゲームの用語からの追加、カードをめくって覚える画面（覚えた／まだ、まだの単語だけやり直し）ができる",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "単語カードに「意味を自動入力」ボタンを追加。ゲームの用語データ、なければ Wikipedia の要約から意味を入れる",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-11",
+          "summary": "用語を58語・問題を116問追加（172語・299問 → 230語・415問）。新しいカテゴリ「AI・データ活用」も追加",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "テストで制限時間のあり・なしと、1問ずつ答え合わせを選べるように。ITパスポートレベルの問題を100問追加（用語25語の新設を含む。255語・515問に）し、ITパスポートのテストが本番と同じ100問・120分で受けられるように",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "用語を68語・問題を136問追加（CSMA/CD・SNMP・ロールバック・挿入ソート・GPU・要件定義・損益計算書・生成AI など、テクノロジ・マネジメント・ストラテジの各分野。323語・650問に）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -95,27 +243,80 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "応用情報技術者試験向けの Anki 風暗記カードアプリ（PWA でスマホでも使える）。",
-      "tags": ["JavaScript", "PWA", "応用情報"],
+      "tags": [
+        "JavaScript",
+        "PWA",
+        "応用情報"
+      ],
       "created": "2026-10-04",
-      "links": { "repo": "https://github.com/Lumiere2110/ap-study-cards", "site": "https://lumiere2110.github.io/ap-study-cards/", "path": "Desktop\\Claudeで作ったもの\\ap-study-cards" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ap-study-cards",
+        "site": "https://lumiere2110.github.io/ap-study-cards/",
+        "path": "Desktop\\Claudeで作ったもの\\ap-study-cards"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 85.7 }, { "name": "CSS", "pct": 13.0 }, { "name": "HTML", "pct": 1.3 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 85.7
+          },
+          {
+            "name": "CSS",
+            "pct": 13
+          },
+          {
+            "name": "HTML",
+            "pct": 1.3
+          }
+        ],
         "summary": "スマホにも入れられる PWA。画面・保存・復習の計算などを役割ごとの JavaScript ファイルに分け、データはブラウザの IndexedDB に保存する。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "js/app.js", "desc": "起動処理" },
-          { "path": "js/views.js", "desc": "各画面（デッキ・学習・統計など）" },
-          { "path": "js/components.js", "desc": "画面の部品" },
-          { "path": "js/srs.js", "desc": "次に復習する日を決める間隔反復の計算" },
-          { "path": "js/db.js", "desc": "IndexedDB への保存" },
-          { "path": "js/store.js", "desc": "アプリの状態の管理" },
-          { "path": "js/questions.js", "desc": "内蔵の問題集" },
-          { "path": "sw.js", "desc": "オフラインで使うためのサービスワーカー" }
+          {
+            "path": "js/app.js",
+            "desc": "起動処理"
+          },
+          {
+            "path": "js/views.js",
+            "desc": "各画面（デッキ・学習・統計など）"
+          },
+          {
+            "path": "js/components.js",
+            "desc": "画面の部品"
+          },
+          {
+            "path": "js/srs.js",
+            "desc": "次に復習する日を決める間隔反復の計算"
+          },
+          {
+            "path": "js/db.js",
+            "desc": "IndexedDB への保存"
+          },
+          {
+            "path": "js/store.js",
+            "desc": "アプリの状態の管理"
+          },
+          {
+            "path": "js/questions.js",
+            "desc": "内蔵の問題集"
+          },
+          {
+            "path": "sw.js",
+            "desc": "オフラインで使うためのサービスワーカー"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-04", "summary": "応用情報向けの Anki 風暗記カードアプリを作成", "source": "GitHub" },
-        { "date": "2026-10-28", "summary": "午後問題を含む問題集（310問）を内蔵し、デッキ名を直して315問すべて追加されるように修正", "source": "GitHub" }
+        {
+          "date": "2026-10-04",
+          "summary": "応用情報向けの Anki 風暗記カードアプリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-28",
+          "summary": "午後問題を含む問題集（310問）を内蔵し、デッキ名を直して315問すべて追加されるように修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -125,34 +326,112 @@
       "category": "学習・クイズ",
       "status": "active",
       "purpose": "いろいろな試験の過去問を「ジャンル → 試験の種類 → 年度」で選び、パソコン上で受験する CBT 方式で解いて練習するための Web アプリ。",
-      "tags": ["HTML", "JavaScript", "CBT", "過去問"],
+      "tags": [
+        "HTML",
+        "JavaScript",
+        "CBT",
+        "過去問"
+      ],
       "created": "2026-11-09",
-      "links": { "repo": "https://github.com/Lumiere2110/shiken", "site": "https://lumiere2110.github.io/shiken/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/shiken",
+        "site": "https://lumiere2110.github.io/shiken/"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 98.5 }, { "name": "CSS", "pct": 1.5 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 98.5
+          },
+          {
+            "name": "CSS",
+            "pct": 1.5
+          }
+        ],
         "summary": "ビルド不要の Web アプリ。CBT の画面と採点は js/、過去問は「ジャンル/試験/年度」ごとに data/ の JavaScript ファイルに分けて持つ。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "js/app.js", "desc": "試験の選択・CBT 画面・タイマー・採点・受験履歴" },
-          { "path": "js/essay.js", "desc": "午後問題（記述式）の画面と採点" },
-          { "path": "data/catalog.js", "desc": "ジャンル → 試験の種類 → 年度 の目録" },
-          { "path": "data/it/ap/", "desc": "応用情報の過去問（年度・午前/午後ごと）" },
-          { "path": "data/it/fe/", "desc": "基本情報の問題" },
-          { "path": "data/it/ip/", "desc": "ITパスポートの過去問" },
-          { "path": "css/style.css", "desc": "見た目" }
+          {
+            "path": "js/app.js",
+            "desc": "試験の選択・CBT 画面・タイマー・採点・受験履歴"
+          },
+          {
+            "path": "js/essay.js",
+            "desc": "午後問題（記述式）の画面と採点"
+          },
+          {
+            "path": "data/catalog.js",
+            "desc": "ジャンル → 試験の種類 → 年度 の目録"
+          },
+          {
+            "path": "data/it/ap/",
+            "desc": "応用情報の過去問（年度・午前/午後ごと）"
+          },
+          {
+            "path": "data/it/fe/",
+            "desc": "基本情報の問題"
+          },
+          {
+            "path": "data/it/ip/",
+            "desc": "ITパスポートの過去問"
+          },
+          {
+            "path": "css/style.css",
+            "desc": "見た目"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-09", "summary": "過去問CBTアプリを作成。問題一覧パネル・見直しマーク・制限時間タイマー・本番/練習モード・シャッフル・分野別の採点結果・間違えた問題の再挑戦・受験履歴を付け、ITパスポート・基本情報・応用情報のオリジナルのサンプル問題を入れた", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "ITパスポート試験 令和8年度 公開問題（全100問・制限時間120分）を追加。解説は自分で作成", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "ジャンル「英語」と、その試験の種類「英検」「TOEIC」を追加（過去問はまだなし）。過去問が未登録の試験では「まだ登録されていません」と表示するようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "ジャンル「電気・電子」と、その試験の種類「第三種電気主任技術者試験」を追加（過去問はまだなし）", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "記述式の採点を無料化。Anthropic API を使う AI 採点と API キー設定をやめ、採点用の文を Claude に貼るコピペ採点と、WebLLM（Qwen3.5）による要点ごとの簡易チェック（オフライン）に変更。", "source": "Claude Code" },
-        { "date": "2026-11-11", "summary": "サンプル問題を削除。CBT画面を変更し、右上に「問題一覧」（押すと一覧が開く）・「電卓」（ドラッグで移動・キー入力可）・「試験を終了」（確認して採点）、右下に「後で見直す」「前へ」「次へ」を配置", "source": "Claude Code" },
-        { "date": "2026-11-11", "summary": "応用情報技術者試験の過去問を2年分追加。令和7年度・令和6年度の秋期・春期について、午前（各80問）と午後（記述式、各11問）を収録。午後の問題文・図・解答例・出題趣旨・採点講評は IPA の公開資料による", "source": "Claude Code" },
-        { "date": "2026-11-13", "summary": "CBT画面を改善。問題を大きく少し左寄せに表示し、「問題一覧」「電卓」を問題の左下、「後で見直す」「前へ」「次へ」を問題の右下に配置。選択肢は文字で並べ右側の解答ボタンで答える形に変更。電卓の移動位置を記憶。問題に付けられる「チェック」（結果に✔印）と、間違えた問題の記録・その問題だけを受ける機能を追加", "source": "Claude Code" },
-        { "date": "2026-11-13", "summary": "CBT画面をユーザーの図に合わせた1枚のウィンドウ型に変更。中央に問題枠（中でスクロール）、右に「選択肢」パネル（ア〜エのボタン）、問題枠の下に「問題一覧」「電卓」「後で見直す」「前へ」、選択肢パネルの下に「次へ」、右上に「残り時間 100:20」形式の表示と「終了」", "source": "Claude Code" },
-        { "date": "2026-11-13", "summary": "受験画面の横幅を広げた（左右の余白と、問題枠と選択肢パネルの間隔を縮小）", "source": "Claude Code" }
+        {
+          "date": "2026-11-09",
+          "summary": "過去問CBTアプリを作成。問題一覧パネル・見直しマーク・制限時間タイマー・本番/練習モード・シャッフル・分野別の採点結果・間違えた問題の再挑戦・受験履歴を付け、ITパスポート・基本情報・応用情報のオリジナルのサンプル問題を入れた",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "ITパスポート試験 令和8年度 公開問題（全100問・制限時間120分）を追加。解説は自分で作成",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "ジャンル「英語」と、その試験の種類「英検」「TOEIC」を追加（過去問はまだなし）。過去問が未登録の試験では「まだ登録されていません」と表示するようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "ジャンル「電気・電子」と、その試験の種類「第三種電気主任技術者試験」を追加（過去問はまだなし）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "記述式の採点を無料化。Anthropic API を使う AI 採点と API キー設定をやめ、採点用の文を Claude に貼るコピペ採点と、WebLLM（Qwen3.5）による要点ごとの簡易チェック（オフライン）に変更。",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-11",
+          "summary": "サンプル問題を削除。CBT画面を変更し、右上に「問題一覧」（押すと一覧が開く）・「電卓」（ドラッグで移動・キー入力可）・「試験を終了」（確認して採点）、右下に「後で見直す」「前へ」「次へ」を配置",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-11",
+          "summary": "応用情報技術者試験の過去問を2年分追加。令和7年度・令和6年度の秋期・春期について、午前（各80問）と午後（記述式、各11問）を収録。午後の問題文・図・解答例・出題趣旨・採点講評は IPA の公開資料による",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "CBT画面を改善。問題を大きく少し左寄せに表示し、「問題一覧」「電卓」を問題の左下、「後で見直す」「前へ」「次へ」を問題の右下に配置。選択肢は文字で並べ右側の解答ボタンで答える形に変更。電卓の移動位置を記憶。問題に付けられる「チェック」（結果に✔印）と、間違えた問題の記録・その問題だけを受ける機能を追加",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "CBT画面をユーザーの図に合わせた1枚のウィンドウ型に変更。中央に問題枠（中でスクロール）、右に「選択肢」パネル（ア〜エのボタン）、問題枠の下に「問題一覧」「電卓」「後で見直す」「前へ」、選択肢パネルの下に「次へ」、右上に「残り時間 100:20」形式の表示と「終了」",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "受験画面の横幅を広げた（左右の余白と、問題枠と選択肢パネルの間隔を縮小）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -162,23 +441,62 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "タイピングで答える一問一答クイズゲーム。",
-      "tags": ["JavaScript", "タイピング", "クイズ"],
+      "tags": [
+        "JavaScript",
+        "タイピング",
+        "クイズ"
+      ],
       "created": "2026-10-07",
-      "links": { "repo": "https://github.com/Lumiere2110/typing-quiz", "site": "https://lumiere2110.github.io/typing-quiz/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/typing-quiz",
+        "site": "https://lumiere2110.github.io/typing-quiz/"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 92.8 }, { "name": "HTML", "pct": 3.9 }, { "name": "CSS", "pct": 3.4 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 92.8
+          },
+          {
+            "name": "HTML",
+            "pct": 3.9
+          },
+          {
+            "name": "CSS",
+            "pct": 3.4
+          }
+        ],
         "summary": "ビルド不要の Web アプリ。ゲームの処理・ローマ字の判定・問題データを別々の JavaScript ファイルに分けている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "js/app.js", "desc": "ゲームの進行・時間制限・結果" },
-          { "path": "js/romaji.js", "desc": "ローマ字入力の判定（いろいろな打ち方を受け付ける）" },
-          { "path": "js/data.js", "desc": "問題データ（data-general.js・data-it.js・data-more.js などカテゴリ別）" },
-          { "path": "index.html", "desc": "画面" },
-          { "path": "css/style.css", "desc": "見た目" }
+          {
+            "path": "js/app.js",
+            "desc": "ゲームの進行・時間制限・結果"
+          },
+          {
+            "path": "js/romaji.js",
+            "desc": "ローマ字入力の判定（いろいろな打ち方を受け付ける）"
+          },
+          {
+            "path": "js/data.js",
+            "desc": "問題データ（data-general.js・data-it.js・data-more.js などカテゴリ別）"
+          },
+          {
+            "path": "index.html",
+            "desc": "画面"
+          },
+          {
+            "path": "css/style.css",
+            "desc": "見た目"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-07", "summary": "タイピングクイズを作成。英語・国語・地理・法律・漫画アニメなどのカテゴリとIT試験用語・一般常識の問題を大量に追加、入力判定をゆるくするなど調整", "source": "GitHub" }
+        {
+          "date": "2026-10-07",
+          "summary": "タイピングクイズを作成。英語・国語・地理・法律・漫画アニメなどのカテゴリとIT試験用語・一般常識の問題を大量に追加、入力判定をゆるくするなど調整",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -188,20 +506,44 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "学術用語を打って覚えるタイピングゲーム。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-07",
-      "links": { "repo": "https://github.com/Lumiere2110/yougoda", "site": "https://lumiere2110.github.io/yougoda/", "artifact": "https://claude.ai/artifact/Y2ZfUmtBJQ73vzoMuKTLqP", "path": "Desktop\\Claudeで作ったもの\\yougoda" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/yougoda",
+        "site": "https://lumiere2110.github.io/yougoda/",
+        "artifact": "https://claude.ai/artifact/Y2ZfUmtBJQ73vzoMuKTLqP",
+        "path": "Desktop\\Claudeで作ったもの\\yougoda"
+      },
       "code": {
-        "languages": [{ "name": "HTML", "pct": 100.0 }],
+        "languages": [
+          {
+            "name": "HTML",
+            "pct": 100
+          }
+        ],
         "summary": "index.html 1ファイルに画面・ゲームの処理・用語データをすべて入れている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "画面・タイピングの判定・用語データのすべて" }
+          {
+            "path": "index.html",
+            "desc": "画面・タイピングの判定・用語データのすべて"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-05", "summary": "Artifact 版を作成", "source": "Artifact" },
-        { "date": "2026-10-07", "summary": "GitHub に公開し、README のプレイURLを修正", "source": "GitHub" }
+        {
+          "date": "2026-10-05",
+          "summary": "Artifact 版を作成",
+          "source": "Artifact"
+        },
+        {
+          "date": "2026-10-07",
+          "summary": "GitHub に公開し、README のプレイURLを修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -211,20 +553,46 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "漢字と英単語のタイピングゲーム（5段階レベル・ミスの解説付き）。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-11",
-      "links": { "repo": "https://github.com/Lumiere2110/typing-dojo", "site": "https://lumiere2110.github.io/typing-dojo/", "artifact": "https://claude.ai/artifact/TDzuRxVe4oRqBUC9jmqJnv" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/typing-dojo",
+        "site": "https://lumiere2110.github.io/typing-dojo/",
+        "artifact": "https://claude.ai/artifact/TDzuRxVe4oRqBUC9jmqJnv"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 68.8 }, { "name": "HTML", "pct": 31.2 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 68.8
+          },
+          {
+            "name": "HTML",
+            "pct": 31.2
+          }
+        ],
         "summary": "画面と処理は index.html、出題する単語は words.js に分けている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "画面・レベル選択・タイピングの判定・ミスの解説" },
-          { "path": "words.js", "desc": "漢字と英単語 500語（5段階×各50語×2種類）" }
+          {
+            "path": "index.html",
+            "desc": "画面・レベル選択・タイピングの判定・ミスの解説"
+          },
+          {
+            "path": "words.js",
+            "desc": "漢字と英単語 500語（5段階×各50語×2種類）"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-11", "summary": "打鍵道場を作成し、問題数を各レベル15語から50語（合計500語）に増加", "source": "GitHub" }
+        {
+          "date": "2026-10-11",
+          "summary": "打鍵道場を作成し、問題数を各レベル15語から50語（合計500語）に増加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -234,19 +602,38 @@
       "category": "タイピング",
       "status": "done",
       "purpose": "略語を見て正式名称を英語でタイプして当てるタイピングゲーム。",
-      "tags": ["HTML", "タイピング"],
+      "tags": [
+        "HTML",
+        "タイピング"
+      ],
       "created": "2026-10-12",
-      "links": { "repo": "https://github.com/Lumiere2110/ryakugo-da", "site": "https://lumiere2110.github.io/ryakugo-da/", "artifact": "https://claude.ai/artifact/Ugbmap5svQKiuFJc3XmMta" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ryakugo-da",
+        "site": "https://lumiere2110.github.io/ryakugo-da/",
+        "artifact": "https://claude.ai/artifact/Ugbmap5svQKiuFJc3XmMta"
+      },
       "code": {
-        "languages": [{ "name": "HTML", "pct": 100.0 }],
+        "languages": [
+          {
+            "name": "HTML",
+            "pct": 100
+          }
+        ],
         "summary": "index.html 1ファイルに画面・処理・略語データをすべて入れている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "画面・タイピングの判定・略語と解説のデータ" }
+          {
+            "path": "index.html",
+            "desc": "画面・タイピングの判定・略語と解説のデータ"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-12", "summary": "略語打を作成し、解説カードの表示を調整", "source": "GitHub" }
+        {
+          "date": "2026-10-12",
+          "summary": "略語打を作成し、解説カードの表示を調整",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -256,25 +643,67 @@
       "category": "ゲーム",
       "status": "active",
       "purpose": "ブロック崩し・オセロ・藪の中など、1台やオンラインで遊べるミニゲームを集めたサイト。",
-      "tags": ["HTML", "オンライン対戦"],
+      "tags": [
+        "HTML",
+        "オンライン対戦"
+      ],
       "created": "2026-09-21",
-      "links": { "repo": "https://github.com/Lumiere2110/game-hub", "site": "https://lumiere2110.github.io/game-hub/", "path": "Desktop\\Claudeで作ったもの\\my_web" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/game-hub",
+        "site": "https://lumiere2110.github.io/game-hub/",
+        "path": "Desktop\\Claudeで作ったもの\\my_web"
+      },
       "code": {
-        "languages": [{ "name": "HTML", "pct": 100.0 }],
+        "languages": [
+          {
+            "name": "HTML",
+            "pct": 100
+          }
+        ],
         "summary": "トップページから各ゲームへ移動する作り。ゲームは1本ごとに1つの HTML ファイルで、画面・ルール・処理をその中にまとめている（29本）。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "トップページ（ゲームの一覧）" },
-          { "path": "games/", "desc": "ゲーム本体（tetris.html・shogi.html・uno.html・yabu.html など1本1ファイル）" }
+          {
+            "path": "index.html",
+            "desc": "トップページ（ゲームの一覧）"
+          },
+          {
+            "path": "games/",
+            "desc": "ゲーム本体（tetris.html・shogi.html・uno.html・yabu.html など1本1ファイル）"
+          }
         ]
       },
       "log": [
-        { "date": "2026-09-21", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-10-04", "summary": "じゃんけん・ブラックジャック・UNO・ワードウルフ・カタカナーシ・ウミガメのスープ・単語探偵・全員一致・ito を追加", "source": "GitHub" },
-        { "date": "2026-10-05", "summary": "藪の中・全員一致・スピード・UNO の遊びやすさを改善", "source": "GitHub" },
-        { "date": "2026-10-10", "summary": "カタカナーシに難しいお題200語と難易度選択、ウミガメのスープに22問と難易度フィルター、ぷよぷよの連鎖表示を修正", "source": "GitHub" },
-        { "date": "2026-10-11", "summary": "「かぐや姫はカンヨークを覚えたい」（慣用句説明の協力ゲーム）を追加", "source": "GitHub" },
-        { "date": "2026-10-13", "summary": "「あいうえバトル」（文字当てバトル）を追加", "source": "GitHub" }
+        {
+          "date": "2026-09-21",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-04",
+          "summary": "じゃんけん・ブラックジャック・UNO・ワードウルフ・カタカナーシ・ウミガメのスープ・単語探偵・全員一致・ito を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-05",
+          "summary": "藪の中・全員一致・スピード・UNO の遊びやすさを改善",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-10",
+          "summary": "カタカナーシに難しいお題200語と難易度選択、ウミガメのスープに22問と難易度フィルター、ぷよぷよの連鎖表示を修正",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-11",
+          "summary": "「かぐや姫はカンヨークを覚えたい」（慣用句説明の協力ゲーム）を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-13",
+          "summary": "「あいうえバトル」（文字当てバトル）を追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -284,33 +713,110 @@
       "category": "Web",
       "status": "active",
       "purpose": "自己紹介と作品集のポートフォリオサイト。",
-      "tags": ["HTML"],
+      "tags": [
+        "HTML"
+      ],
       "created": "2026-10-21",
-      "links": { "repo": "https://github.com/Lumiere2110/my_web", "site": "https://lumiere2110.github.io/my_web/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/my_web",
+        "site": "https://lumiere2110.github.io/my_web/"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 62.4 }, { "name": "HTML", "pct": 21.1 }, { "name": "CSS", "pct": 16.5 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 62.4
+          },
+          {
+            "name": "HTML",
+            "pct": 21.1
+          },
+          {
+            "name": "CSS",
+            "pct": 16.5
+          }
+        ],
         "summary": "複数ページの静的サイト。ポートフォリオのページと、マイクラ進捗トラッカー（advancements）を別々のファイルにしている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "トップページ（about.html・works.html・contact.html も同じ作り）" },
-          { "path": "style.css", "desc": "サイト全体の見た目" },
-          { "path": "advancements.js", "desc": "マイクラ進捗トラッカーの処理" },
-          { "path": "advancements-data.js", "desc": "進捗の一覧データ" },
-          { "path": "images/", "desc": "作品のスクリーンショットなどの画像" }
+          {
+            "path": "index.html",
+            "desc": "トップページ（about.html・works.html・contact.html も同じ作り）"
+          },
+          {
+            "path": "style.css",
+            "desc": "サイト全体の見た目"
+          },
+          {
+            "path": "advancements.js",
+            "desc": "マイクラ進捗トラッカーの処理"
+          },
+          {
+            "path": "advancements-data.js",
+            "desc": "進捗の一覧データ"
+          },
+          {
+            "path": "images/",
+            "desc": "作品のスクリーンショットなどの画像"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-21", "summary": "ポートフォリオサイトとマイクラ進捗トラッカーを追加", "source": "GitHub" },
-        { "date": "2026-10-27", "summary": "トップページと作品一覧を更新", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "作品一覧を更新", "source": "GitHub" },
-        { "date": "2026-11-06", "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加", "source": "GitHub" },
-        { "date": "2026-11-07", "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更", "source": "GitHub" },
-        { "date": "2026-11-09", "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "Freedom Land のカードを2ボタンにし、「ブラウザ・スマホで遊ぶ」(GitHub Pages)と「アプリをダウンロード」を選べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "Freedom Land のカードの説明を「パスワードでルームを作って、パソコンとスマホのブラウザでいっしょにオンライン対戦できる」に更新", "source": "Claude Code" }
+        {
+          "date": "2026-10-21",
+          "summary": "ポートフォリオサイトとマイクラ進捗トラッカーを追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-10-27",
+          "summary": "トップページと作品一覧を更新",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "作品一覧を更新",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "作品一覧を4列に並べ替え、Record へのリンクを追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-07",
+          "summary": "トップページにメモアプリ（My notebook）へのボタンを追加。用語打・打鍵道場・略語打のカードのリンクを GitHub Pages の URL に変更",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "作品一覧の5番目に「試験（過去問CBT）」のカードを追加し、それまで5番目以降だった作品を1つずつ後ろにずらした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "作品一覧の14番目に「Freedom Land」のカードを追加。クリックすると GitHub Releases のダウンロードページに移動する",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "作品一覧の15番目に「浮島クリスタル」のカードを追加。クリックするとブラウザ版(GitHub Pages)が開く",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "浮島クリスタルのカードに「ブラウザで遊ぶ」「アプリをダウンロード」の2つのボタンを付けた(カードの中に並べるボタンの見た目 .card-links / .card-link を style.css に追加)",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "Freedom Land のカードを2ボタンにし、「ブラウザ・スマホで遊ぶ」(GitHub Pages)と「アプリをダウンロード」を選べるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "Freedom Land のカードの説明を「パスワードでルームを作って、パソコンとスマホのブラウザでいっしょにオンライン対戦できる」に更新",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -320,21 +826,60 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "Minecraft サーバー・データパック・プラグイン・Mod・アプリ・GitHub の作り方をまとめたノート。",
-      "tags": ["ドキュメント"],
+      "tags": [
+        "ドキュメント"
+      ],
       "created": "2026-10-03",
-      "links": { "repo": "https://github.com/Lumiere2110/learning-notes", "path": "Desktop\\Claudeで作ったもの\\learning-notes" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/learning-notes",
+        "path": "Desktop\\Claudeで作ったもの\\learning-notes"
+      },
       "code": {
-        "languages": [{ "name": "Markdown", "pct": 95.1 }, { "name": "JavaScript", "pct": 2.1 }, { "name": "CSS", "pct": 1.0 }, { "name": "mcfunction", "pct": 0.9 }, { "name": "HTML", "pct": 0.9 }],
+        "languages": [
+          {
+            "name": "Markdown",
+            "pct": 95.1
+          },
+          {
+            "name": "JavaScript",
+            "pct": 2.1
+          },
+          {
+            "name": "CSS",
+            "pct": 1
+          },
+          {
+            "name": "mcfunction",
+            "pct": 0.9
+          },
+          {
+            "name": "HTML",
+            "pct": 0.9
+          }
+        ],
         "summary": "Markdown で書いた手順ノートが中心。例として小さな Web アプリとデータパックのソースを入れている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "docs/", "desc": "01〜10 の手順ノート（GitHub・サーバー・データパック・プラグイン・Mod・アプリ）と用語集" },
-          { "path": "examples/app/todo/", "desc": "サンプルの ToDo アプリ（HTML・CSS・JavaScript）" },
-          { "path": "examples/datapack/hello-pack/", "desc": "サンプルのデータパック（mcfunction）" }
+          {
+            "path": "docs/",
+            "desc": "01〜10 の手順ノート（GitHub・サーバー・データパック・プラグイン・Mod・アプリ）と用語集"
+          },
+          {
+            "path": "examples/app/todo/",
+            "desc": "サンプルの ToDo アプリ（HTML・CSS・JavaScript）"
+          },
+          {
+            "path": "examples/datapack/hello-pack/",
+            "desc": "サンプルのデータパック（mcfunction）"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-03", "summary": "学習ノートを作成（GitHub・サーバー・データパック・プラグイン・Mod・アプリの作り方）", "source": "GitHub" }
+        {
+          "date": "2026-10-03",
+          "summary": "学習ノートを作成（GitHub・サーバー・データパック・プラグイン・Mod・アプリの作り方）",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -344,23 +889,55 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "自作 Minecraft Mod（NeoForge 26.3）を配布するサイト。",
-      "tags": ["HTML", "NeoForge"],
+      "tags": [
+        "HTML",
+        "NeoForge"
+      ],
       "created": "2026-10-31",
-      "links": { "repo": "https://github.com/Lumiere2110/mod-site", "site": "https://lumiere2110.github.io/mod-site/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/mod-site",
+        "site": "https://lumiere2110.github.io/mod-site/"
+      },
       "code": {
-        "languages": [{ "name": "HTML", "pct": 100.0 }],
+        "languages": [
+          {
+            "name": "HTML",
+            "pct": 100
+          }
+        ],
         "summary": "配布ページ1枚と、配布する mod の jar、能力mod の教科書を置いた静的サイト。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "配布ページ（mod の説明とダウンロード）" },
-          { "path": "downloads/", "desc": "配布する mod の jar" },
-          { "path": "textbook/nouryoku.html", "desc": "能力mod の教科書（nouryoku の tools/textbook で自動生成）" }
+          {
+            "path": "index.html",
+            "desc": "配布ページ（mod の説明とダウンロード）"
+          },
+          {
+            "path": "downloads/",
+            "desc": "配布する mod の jar"
+          },
+          {
+            "path": "textbook/nouryoku.html",
+            "desc": "能力mod の教科書（nouryoku の tools/textbook で自動生成）"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-31", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "nouryoku 2.8.5〜2.9.0 を順に公開", "source": "GitHub" },
-        { "date": "2026-11-06", "summary": "Nouryoku のカードに「📖 教科書」ボタン（能力mod 教科書へのリンク）を追加", "source": "Claude Code" }
+        {
+          "date": "2026-10-31",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "nouryoku 2.8.5〜2.9.0 を順に公開",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "Nouryoku のカードに「📖 教科書」ボタン（能力mod 教科書へのリンク）を追加",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -371,32 +948,100 @@
       "status": "active",
       "private": true,
       "purpose": "能力と技を使って戦う NeoForge 用 Minecraft Mod。リポジトリは非公開で、配布は自作Mod配布サイトから。",
-      "tags": ["Java", "NeoForge", "非公開リポジトリ"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "非公開リポジトリ"
+      ],
       "created": "2026-10-31",
-      "links": { "site": "https://lumiere2110.github.io/mod-site/" },
+      "links": {
+        "site": "https://lumiere2110.github.io/mod-site/"
+      },
       "code": {
-        "languages": [{ "name": "Java", "pct": 97.5 }, { "name": "HTML", "pct": 1.7 }],
+        "languages": [
+          {
+            "name": "Java",
+            "pct": 97.5
+          },
+          {
+            "name": "HTML",
+            "pct": 1.7
+          }
+        ],
         "summary": "NeoForge 用 Mod。Java のクラスを能力ごとに1つずつ作り、画面・通信・Minecraft 本体の書き換えはフォルダーを分けている。Gradle でビルドし、GitHub Actions でも自動ビルドする。（非公開リポジトリ）",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "src/main/java/com/example/nouryoku/", "desc": "能力ごとのクラス（GravityAbility.java・CloneAbility.java など、Java 139ファイル）" },
-          { "path": "…/nouryoku/AbilityServer.java", "desc": "サーバー側で能力を動かす中心の処理" },
-          { "path": "…/nouryoku/client/", "desc": "画面表示・キー入力などクライアント側の処理" },
-          { "path": "…/nouryoku/network/", "desc": "サーバーとクライアントの通信" },
-          { "path": "…/nouryoku/mixin/", "desc": "Minecraft 本体の動きを書き換える Mixin" },
-          { "path": "tools/textbook/gen.pl", "desc": "ソースから教科書を作る Perl スクリプト" },
-          { "path": "build.gradle", "desc": "ビルドの設定" }
+          {
+            "path": "src/main/java/com/example/nouryoku/",
+            "desc": "能力ごとのクラス（GravityAbility.java・CloneAbility.java など、Java 139ファイル）"
+          },
+          {
+            "path": "…/nouryoku/AbilityServer.java",
+            "desc": "サーバー側で能力を動かす中心の処理"
+          },
+          {
+            "path": "…/nouryoku/client/",
+            "desc": "画面表示・キー入力などクライアント側の処理"
+          },
+          {
+            "path": "…/nouryoku/network/",
+            "desc": "サーバーとクライアントの通信"
+          },
+          {
+            "path": "…/nouryoku/mixin/",
+            "desc": "Minecraft 本体の動きを書き換える Mixin"
+          },
+          {
+            "path": "tools/textbook/gen.pl",
+            "desc": "ソースから教科書を作る Perl スクリプト"
+          },
+          {
+            "path": "build.gradle",
+            "desc": "ビルドの設定"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-31", "summary": "リポジトリを作成", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.8.5〜2.8.13: 跳躍・速射・ハイジャンプ・フラッシュ・瞬身・フロントアロー・チャージショット・重力のアイコン追加、ジャンプ台を強化", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.8.14〜2.8.15: 瞬身をストックスキルに、/weather で新しい天気、狙撃とアローレインを調整", "source": "GitHub" },
-        { "date": "2026-11-05", "summary": "2.9.0: 技キーR・技名表示・スロット複数選択、反転/反響/時間/怪盗/法律の調整と修正", "source": "GitHub" },
-        { "date": "2026-11-13", "summary": "2.9.2: 未開発の能力に「範囲」を追加", "source": "GitHub" },
-        { "date": "2026-11-13", "summary": "2.9.3: 索敵系・イリュージョナー/ジャイアントのスポーン・寄生(未開発)・守護/再生/封印(抑制・封眼)の調整・捕食のMobの力の入切と調整・反響の時穿剣", "source": "GitHub" },
-        { "date": "2026-11-13", "summary": "2.9.4: 霊媒・収集・建築・幻夢・潜入・変身・暗殺・加護を開発、新能力の幽世・煉獄、ユメミワールド、転移のディメンションゲート・ポータブルシフター、反転世界、眠りは50%で解除", "source": "GitHub" },
-        { "date": "2026-11-13", "summary": "2.9.5: 潜入でブロックの中にいても画面が暗くならないように", "source": "GitHub" }
+        {
+          "date": "2026-10-31",
+          "summary": "リポジトリを作成",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.8.5〜2.8.13: 跳躍・速射・ハイジャンプ・フラッシュ・瞬身・フロントアロー・チャージショット・重力のアイコン追加、ジャンプ台を強化",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.8.14〜2.8.15: 瞬身をストックスキルに、/weather で新しい天気、狙撃とアローレインを調整",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-05",
+          "summary": "2.9.0: 技キーR・技名表示・スロット複数選択、反転/反響/時間/怪盗/法律の調整と修正",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.2: 未開発の能力に「範囲」を追加",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.3: 索敵系・イリュージョナー/ジャイアントのスポーン・寄生(未開発)・守護/再生/封印(抑制・封眼)の調整・捕食のMobの力の入切と調整・反響の時穿剣",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.4: 霊媒・収集・建築・幻夢・潜入・変身・暗殺・加護を開発、新能力の幽世・煉獄、ユメミワールド、転移のディメンションゲート・ポータブルシフター、反転世界、眠りは50%で解除",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.5: 潜入でブロックの中にいても画面が暗くならないように",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -407,23 +1052,63 @@
       "status": "done",
       "private": true,
       "purpose": "魔法の武器を追加する Minecraft 26.3 NeoForge 用 Mod。",
-      "tags": ["Java", "NeoForge", "非公開リポジトリ"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "非公開リポジトリ"
+      ],
       "created": "2026-10-18",
       "links": {},
       "code": {
-        "languages": [{ "name": "Java", "pct": 49.1 }, { "name": "Gradle (Groovy)", "pct": 26.4 }, { "name": "TOML", "pct": 13.7 }, { "name": "PowerShell", "pct": 10.9 }],
+        "languages": [
+          {
+            "name": "Java",
+            "pct": 49.1
+          },
+          {
+            "name": "Gradle (Groovy)",
+            "pct": 26.4
+          },
+          {
+            "name": "TOML",
+            "pct": 13.7
+          },
+          {
+            "name": "PowerShell",
+            "pct": 10.9
+          }
+        ],
         "summary": "NeoForge 用 Mod。武器ごとに Java のクラスを作り、テクスチャは PowerShell のスクリプトで作っている。（非公開リポジトリ）",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "src/main/java/com/example/mahou/Mahou.java", "desc": "mod の入り口（アイテムの登録）" },
-          { "path": "src/main/java/com/example/mahou/item/", "desc": "炎・氷の剣、回復・雷・風の杖の動き" },
-          { "path": "src/main/templates/META-INF/neoforge.mods.toml", "desc": "mod の情報" },
-          { "path": "tools/make_textures.ps1", "desc": "テクスチャ画像を作る PowerShell スクリプト" },
-          { "path": "build.gradle", "desc": "ビルドの設定" }
+          {
+            "path": "src/main/java/com/example/mahou/Mahou.java",
+            "desc": "mod の入り口（アイテムの登録）"
+          },
+          {
+            "path": "src/main/java/com/example/mahou/item/",
+            "desc": "炎・氷の剣、回復・雷・風の杖の動き"
+          },
+          {
+            "path": "src/main/templates/META-INF/neoforge.mods.toml",
+            "desc": "mod の情報"
+          },
+          {
+            "path": "tools/make_textures.ps1",
+            "desc": "テクスチャ画像を作る PowerShell スクリプト"
+          },
+          {
+            "path": "build.gradle",
+            "desc": "ビルドの設定"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-18", "summary": "Magic Weapons mod 1.0.0 を作成", "source": "GitHub" }
+        {
+          "date": "2026-10-18",
+          "summary": "Magic Weapons mod 1.0.0 を作成",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -433,22 +1118,49 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "プラグインが使える Minecraft Paper 26.3 サーバーの設定。",
-      "tags": ["Paper", "サーバー"],
+      "tags": [
+        "Paper",
+        "サーバー"
+      ],
       "created": "2026-10-01",
-      "links": { "repo": "https://github.com/Lumiere2110/minecraft-paper-server", "path": "Desktop\\MinecraftServer" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/minecraft-paper-server",
+        "path": "Desktop\\MinecraftServer"
+      },
       "code": {
-        "languages": [{ "name": "YAML", "pct": 99.5 }],
+        "languages": [
+          {
+            "name": "YAML",
+            "pct": 99.5
+          }
+        ],
         "summary": "プログラムではなく、Paper サーバーの設定ファイル（YAML など）と起動用のバッチファイルを置いている。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "config/paper-global.yml", "desc": "Paper 全体の設定（paper-world-defaults.yml はワールドの初期設定）" },
-          { "path": "spigot.yml", "desc": "Spigot の設定（bukkit.yml・commands.yml も同じ）" },
-          { "path": "server.properties.example", "desc": "server.properties の例" },
-          { "path": "run.bat", "desc": "サーバーを起動するバッチファイル" }
+          {
+            "path": "config/paper-global.yml",
+            "desc": "Paper 全体の設定（paper-world-defaults.yml はワールドの初期設定）"
+          },
+          {
+            "path": "spigot.yml",
+            "desc": "Spigot の設定（bukkit.yml・commands.yml も同じ）"
+          },
+          {
+            "path": "server.properties.example",
+            "desc": "server.properties の例"
+          },
+          {
+            "path": "run.bat",
+            "desc": "サーバーを起動するバッチファイル"
+          }
         ]
       },
       "log": [
-        { "date": "2026-10-01", "summary": "Paper 26.3 サーバーの設定とプラグインを追加", "source": "GitHub" }
+        {
+          "date": "2026-10-01",
+          "summary": "Paper 26.3 サーバーの設定とプラグインを追加",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -459,22 +1171,57 @@
       "status": "done",
       "private": true,
       "purpose": "Minecraft の Mod を管理するアプリ。Artifact 版（共有DB対応）を元にしている。",
-      "tags": ["JavaScript", "非公開リポジトリ"],
+      "tags": [
+        "JavaScript",
+        "非公開リポジトリ"
+      ],
       "created": "2026-09-24",
-      "links": { "artifact": "https://claude.ai/artifact/87Ac6ER9rVqyrskoAhkS92" },
+      "links": {
+        "artifact": "https://claude.ai/artifact/87Ac6ER9rVqyrskoAhkS92"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 74.5 }, { "name": "CSS", "pct": 14.7 }, { "name": "HTML", "pct": 10.8 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 74.5
+          },
+          {
+            "name": "CSS",
+            "pct": 14.7
+          },
+          {
+            "name": "HTML",
+            "pct": 10.8
+          }
+        ],
         "summary": "Artifact 版をもとにした1ページの Web アプリ。処理は app.js 1ファイルにまとめている。（非公開リポジトリ）",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "app.js", "desc": "Mod の一覧・登録・保存の処理" },
-          { "path": "index.html", "desc": "画面" },
-          { "path": "style.css", "desc": "見た目" }
+          {
+            "path": "app.js",
+            "desc": "Mod の一覧・登録・保存の処理"
+          },
+          {
+            "path": "index.html",
+            "desc": "画面"
+          },
+          {
+            "path": "style.css",
+            "desc": "見た目"
+          }
         ]
       },
       "log": [
-        { "date": "2026-09-24", "summary": "Artifact 版を初回取り込み（共有DB対応・画像を別ドキュメントに分割）", "source": "GitHub" },
-        { "date": "2026-09-25", "summary": "Artifact を更新", "source": "Artifact" }
+        {
+          "date": "2026-09-24",
+          "summary": "Artifact 版を初回取り込み（共有DB対応・画像を別ドキュメントに分割）",
+          "source": "GitHub"
+        },
+        {
+          "date": "2026-09-25",
+          "summary": "Artifact を更新",
+          "source": "Artifact"
+        }
       ]
     },
     {
@@ -485,21 +1232,52 @@
       "status": "done",
       "private": true,
       "purpose": "Minecraft Mod の整理アプリと、同期するデータファイル。",
-      "tags": ["JavaScript", "非公開リポジトリ"],
+      "tags": [
+        "JavaScript",
+        "非公開リポジトリ"
+      ],
       "created": "2026-09-24",
-      "links": { "path": "Desktop\\MinecraftServer\\mod-organizer" },
+      "links": {
+        "path": "Desktop\\MinecraftServer\\mod-organizer"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 66.2 }, { "name": "HTML", "pct": 21.3 }, { "name": "CSS", "pct": 12.5 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 66.2
+          },
+          {
+            "name": "HTML",
+            "pct": 21.3
+          },
+          {
+            "name": "CSS",
+            "pct": 12.5
+          }
+        ],
         "summary": "1ページの Web アプリと、GitHub に同期するデータファイル。（非公開リポジトリ）",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "app.js", "desc": "Mod の整理と GitHub への同期" },
-          { "path": "index.html", "desc": "画面（artifact.html は Artifact 用の版）" },
-          { "path": "data.json", "desc": "同期するデータ" }
+          {
+            "path": "app.js",
+            "desc": "Mod の整理と GitHub への同期"
+          },
+          {
+            "path": "index.html",
+            "desc": "画面（artifact.html は Artifact 用の版）"
+          },
+          {
+            "path": "data.json",
+            "desc": "同期するデータ"
+          }
         ]
       },
       "log": [
-        { "date": "2026-09-24", "summary": "アプリと同期データを作成し、GitHub 同期の認証ヘッダーを修正", "source": "GitHub" }
+        {
+          "date": "2026-09-24",
+          "summary": "アプリと同期データを作成し、GitHub 同期の認証ヘッダーを修正",
+          "source": "GitHub"
+        }
       ]
     },
     {
@@ -509,13 +1287,33 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "ネットワークとセキュリティを学ぶ学習ページ。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/TfUrEgUcJEP9FJDr8xkh1P" },
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/TfUrEgUcJEP9FJDr8xkh1P"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-ap-guide",
@@ -524,13 +1322,34 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "応用情報技術者試験の対策をまとめた攻略ページ。",
-      "tags": ["Artifact", "応用情報"],
-      "links": { "artifact": "https://claude.ai/artifact/HqmQit219d4cJwLSxYYikT" },
+      "tags": [
+        "Artifact",
+        "応用情報"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/HqmQit219d4cJwLSxYYikT"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-toeic",
@@ -539,13 +1358,35 @@
       "category": "学習・クイズ",
       "status": "done",
       "purpose": "TOEIC の練習アプリ。ローカルに HTML 版もある。",
-      "tags": ["Artifact", "英語"],
-      "links": { "artifact": "https://claude.ai/artifact/7HgNLzrHDvLQ66fWLFRqhR", "path": "Desktop\\Claudeで作ったもの\\toeic-trainer.html" },
+      "tags": [
+        "Artifact",
+        "英語"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/7HgNLzrHDvLQ66fWLFRqhR",
+        "path": "Desktop\\Claudeで作ったもの\\toeic-trainer.html"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。ローカルにも同じ HTML ファイル（toeic-trainer.html）がある。"
       },
-      "log": [ { "date": "2026-09-15", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-15",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-shijo",
@@ -554,13 +1395,33 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "詩を書きためておくノート。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/4rUAtp9wFV2xARuPC4ooaP" },
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/4rUAtp9wFV2xARuPC4ooaP"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-17", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-17",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-daybook",
@@ -569,13 +1430,33 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "日々のことを記録する日記帳。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/1jsHhWkxacwMaBoGcKrRCF" },
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/1jsHhWkxacwMaBoGcKrRCF"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-17", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-17",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-kakeibo",
@@ -584,13 +1465,33 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "収入と支出を記録する家計簿。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/6aSBekuCPfrmhWbqxNG5Rr" },
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/6aSBekuCPfrmhWbqxNG5Rr"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-game-cashback",
@@ -599,13 +1500,33 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "ゲーム購入時のポイント還元などを記録・集計するトラッカー。",
-      "tags": ["Artifact"],
-      "links": { "artifact": "https://claude.ai/artifact/Y1Z1hTTHwk4gvSzqH3KwCY" },
+      "tags": [
+        "Artifact"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/Y1Z1hTTHwk4gvSzqH3KwCY"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-18", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-18",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-pc-bench",
@@ -614,13 +1535,34 @@
       "category": "生活・記録",
       "status": "done",
       "purpose": "PC パーツのベンチマークを比べるページ。",
-      "tags": ["Artifact", "PC"],
-      "links": { "artifact": "https://claude.ai/artifact/9NZDNkpiaaim8VoqM7tA9M" },
+      "tags": [
+        "Artifact",
+        "PC"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/9NZDNkpiaaim8VoqM7tA9M"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-14", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-14",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-unity-guide",
@@ -629,13 +1571,34 @@
       "category": "ゲーム",
       "status": "done",
       "purpose": "Unity でゲームを作る手順をまとめたガイド。",
-      "tags": ["Artifact", "Unity"],
-      "links": { "artifact": "https://claude.ai/artifact/F7HWjsjizxuf1pS3RkAus2" },
+      "tags": [
+        "Artifact",
+        "Unity"
+      ],
+      "links": {
+        "artifact": "https://claude.ai/artifact/F7HWjsjizxuf1pS3RkAus2"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "claude.ai 上の Artifact。HTML・CSS・JavaScript を1つの HTML ページにまとめて書いている。ソースは Artifact の中にあり、GitHub にはない。"
       },
-      "log": [ { "date": "2026-09-15", "summary": "Artifact を更新（最終）", "source": "Artifact" } ]
+      "log": [
+        {
+          "date": "2026-09-15",
+          "summary": "Artifact を更新（最終）",
+          "source": "Artifact"
+        }
+      ]
     },
     {
       "id": "art-nouryoku-textbook",
@@ -644,14 +1607,105 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "能力mod（v2.9.0）の全能力・全技・技スロット・状態異常・捕食のMobの力を、ゲーム内の説明と同じ内容から細かくまとめた教科書。",
-      "tags": ["Artifact", "NeoForge", "ドキュメント"],
+      "tags": [
+        "Artifact",
+        "NeoForge",
+        "ドキュメント"
+      ],
       "created": "2026-11-06",
-      "links": { "artifact": "https://claude.ai/artifact/7cePxvh412wVXYc2AeRku6", "site": "https://lumiere2110.github.io/mod-site/textbook/nouryoku.html" },
+      "links": {
+        "artifact": "https://claude.ai/artifact/7cePxvh412wVXYc2AeRku6",
+        "site": "https://lumiere2110.github.io/mod-site/textbook/nouryoku.html"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }, { "name": "JavaScript" }, { "name": "Perl" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "Perl"
+          }
+        ],
         "summary": "1つの HTML ページの Artifact。手で書いたのではなく、nouryoku のソースから tools/textbook（Perl のスクリプトと HTML のテンプレート）で自動生成している。"
       },
-      "log": [ { "date": "2026-11-06", "summary": "教科書を作成（全9章・57能力・技スロットの技166・Mobの力77。検索・目次・ダーク表示つき）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "ソースから自動で作るツール（nouryoku の tools/textbook）を追加。今後はアップデートごとに作り直して同じURLに公開する", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "技・能力・状態異常・天気のアイコンを表示（画像のない技はゲームと同じ仮のアイコン）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "文字を大きくし、横幅を広げた（最大1640px）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "横幅を最大1960pxに広げ、スクロールバーを太く（20px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーをさらに太く（34px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "配布サイト（GitHub Pages）に公開版を置いて、だれでも見られるようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーの太さがほかの CSS に消されないようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "Firefox でも太いスクロールバーが出るようにした（自前のスクロールバー）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーを少し細く（34px→24px）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.2 に合わせて作り直した（未開発に「範囲」）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.3 に合わせて作り直した（索敵系・封眼・捕食・時穿剣）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.4 に合わせて作り直した（新能力・開発した能力・ユメミワールド）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.5 に合わせて作り直した（潜入の見え方）", "source": "Claude Code" } ]
+      "log": [
+        {
+          "date": "2026-11-06",
+          "summary": "教科書を作成（全9章・57能力・技スロットの技166・Mobの力77。検索・目次・ダーク表示つき）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "ソースから自動で作るツール（nouryoku の tools/textbook）を追加。今後はアップデートごとに作り直して同じURLに公開する",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "技・能力・状態異常・天気のアイコンを表示（画像のない技はゲームと同じ仮のアイコン）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "文字を大きくし、横幅を広げた（最大1640px）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "横幅を最大1960pxに広げ、スクロールバーを太く（20px）した",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "スクロールバーをさらに太く（34px）した",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "配布サイト（GitHub Pages）に公開版を置いて、だれでも見られるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "スクロールバーの太さがほかの CSS に消されないようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "Firefox でも太いスクロールバーが出るようにした（自前のスクロールバー）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "スクロールバーを少し細く（34px→24px）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.2 に合わせて作り直した（未開発に「範囲」）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.3 に合わせて作り直した（索敵系・封眼・捕食・時穿剣）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.4 に合わせて作り直した（新能力・開発した能力・ユメミワールド）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-13",
+          "summary": "2.9.5 に合わせて作り直した（潜入の見え方）",
+          "source": "Claude Code"
+        }
+      ]
     },
     {
       "id": "local-minecraft-server",
@@ -660,20 +1714,63 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "自宅の Minecraft サーバー本体と、バトロワ用・実験用データパック、サーバープラグインの開発環境。",
-      "tags": ["サーバー", "データパック", "プラグイン"],
-      "links": { "path": "Desktop\\MinecraftServer" },
+      "tags": [
+        "サーバー",
+        "データパック",
+        "プラグイン"
+      ],
+      "links": {
+        "path": "Desktop\\MinecraftServer"
+      },
       "code": {
-        "languages": [{ "name": "Batch" }, { "name": "PowerShell" }, { "name": "mcfunction" }, { "name": "Java" }, { "name": "JavaScript" }],
+        "languages": [
+          {
+            "name": "Batch"
+          },
+          {
+            "name": "PowerShell"
+          },
+          {
+            "name": "mcfunction"
+          },
+          {
+            "name": "Java"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ],
         "summary": "サーバー本体のフォルダー。起動・停止などはバッチファイルと PowerShell、データパックは mcfunction、プラグインは Java、Mod管理アプリは JavaScript で書いている。",
         "files": [
-          { "path": "サーバー起動.bat", "desc": "サーバーの起動（サーバー停止.bat で停止）" },
-          { "path": "start-server.ps1", "desc": "起動の本体（stop-server.ps1・rcon.ps1・firewall-setup.ps1 も PowerShell）" },
-          { "path": "world/datapacks/battle_royale/", "desc": "バトロワ用のデータパック（mcfunction）" },
-          { "path": "plugin-dev/", "desc": "サーバープラグイン（Java、MyFirstPlugin.java など）" },
-          { "path": "mod-organizer/", "desc": "Mod管理アプリ（HTML・JavaScript）" }
+          {
+            "path": "サーバー起動.bat",
+            "desc": "サーバーの起動（サーバー停止.bat で停止）"
+          },
+          {
+            "path": "start-server.ps1",
+            "desc": "起動の本体（stop-server.ps1・rcon.ps1・firewall-setup.ps1 も PowerShell）"
+          },
+          {
+            "path": "world/datapacks/battle_royale/",
+            "desc": "バトロワ用のデータパック（mcfunction）"
+          },
+          {
+            "path": "plugin-dev/",
+            "desc": "サーバープラグイン（Java、MyFirstPlugin.java など）"
+          },
+          {
+            "path": "mod-organizer/",
+            "desc": "Mod管理アプリ（HTML・JavaScript）"
+          }
         ]
       },
-      "log": [ { "date": "2026-10-01", "summary": "Paper 26.3 サーバーとして設定（設定は minecraft-paper-server リポジトリにも保存）", "source": "Claude Code" } ]
+      "log": [
+        {
+          "date": "2026-10-01",
+          "summary": "Paper 26.3 サーバーとして設定（設定は minecraft-paper-server リポジトリにも保存）",
+          "source": "Claude Code"
+        }
+      ]
     },
     {
       "id": "local-mod-dev",
@@ -682,16 +1779,43 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "Mod 開発の作業場所と完成した jar の置き場所（mob-battle、mod-dev、完成したmod）。Forge 開発環境は MinecraftModDev。",
-      "tags": ["Forge", "NeoForge"],
-      "links": { "path": "Desktop\\自作mod" },
+      "tags": [
+        "Forge",
+        "NeoForge"
+      ],
+      "links": {
+        "path": "Desktop\\自作mod"
+      },
       "code": {
-        "languages": [{ "name": "Java" }, { "name": "Gradle (Groovy)" }, { "name": "PowerShell" }],
+        "languages": [
+          {
+            "name": "Java"
+          },
+          {
+            "name": "Gradle (Groovy)"
+          },
+          {
+            "name": "PowerShell"
+          }
+        ],
         "summary": "Forge 用 Mod の開発フォルダー。どれも Java で書き、Gradle でビルドする。",
         "files": [
-          { "path": "mob-battle/src/main/java/com/example/mobbattle/", "desc": "Mob 同士を戦わせる mod（MobBattle.java・MobBattleCommand.java など）" },
-          { "path": "mob-battle/tools/rcon-test.ps1", "desc": "テスト用の PowerShell スクリプト" },
-          { "path": "mod-dev/src/main/java/com/example/myfirstmod/", "desc": "最初に作った練習用の mod" },
-          { "path": "完成したmod/", "desc": "できあがった jar" }
+          {
+            "path": "mob-battle/src/main/java/com/example/mobbattle/",
+            "desc": "Mob 同士を戦わせる mod（MobBattle.java・MobBattleCommand.java など）"
+          },
+          {
+            "path": "mob-battle/tools/rcon-test.ps1",
+            "desc": "テスト用の PowerShell スクリプト"
+          },
+          {
+            "path": "mod-dev/src/main/java/com/example/myfirstmod/",
+            "desc": "最初に作った練習用の mod"
+          },
+          {
+            "path": "完成したmod/",
+            "desc": "できあがった jar"
+          }
         ]
       },
       "log": []
@@ -703,33 +1827,115 @@
       "category": "記録・ツール",
       "status": "active",
       "purpose": "メモを「〇〇ボックス › フォルダ › メモファイル › ページ」で整理し、ページにテキストボックス・付箋・画像・手書きで自由に書けるノートサイト。入力した文字は自動変換せずそのまま保存する。",
-      "tags": ["HTML", "GitHub Pages", "IndexedDB", "メモ"],
+      "tags": [
+        "HTML",
+        "GitHub Pages",
+        "IndexedDB",
+        "メモ"
+      ],
       "created": "2026-11-06",
-      "links": { "repo": "https://github.com/Lumiere2110/My-notebook", "site": "https://lumiere2110.github.io/My-notebook/", "path": "Desktop\\自作mod\\modリポジトリ\\My-notebook" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/My-notebook",
+        "site": "https://lumiere2110.github.io/My-notebook/",
+        "path": "Desktop\\自作mod\\modリポジトリ\\My-notebook"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript", "pct": 77.6 }, { "name": "CSS", "pct": 21.4 }, { "name": "HTML", "pct": 0.9 }],
+        "languages": [
+          {
+            "name": "JavaScript",
+            "pct": 77.6
+          },
+          {
+            "name": "CSS",
+            "pct": 21.4
+          },
+          {
+            "name": "HTML",
+            "pct": 0.9
+          }
+        ],
         "summary": "ビルド不要の PWA。ノートの処理はほぼ js/app.js にまとめ、データはブラウザの IndexedDB に保存する。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "js/app.js", "desc": "ボックス・フォルダ・メモファイル・ページ、テキストボックス・付箋・手書きなどすべての処理" },
-          { "path": "js/db.js", "desc": "IndexedDB への保存" },
-          { "path": "css/style.css", "desc": "見た目（用紙の種類など）" },
-          { "path": "sw.js", "desc": "オフラインで使うためのサービスワーカー" }
+          {
+            "path": "js/app.js",
+            "desc": "ボックス・フォルダ・メモファイル・ページ、テキストボックス・付箋・手書きなどすべての処理"
+          },
+          {
+            "path": "js/db.js",
+            "desc": "IndexedDB への保存"
+          },
+          {
+            "path": "css/style.css",
+            "desc": "見た目（用紙の種類など）"
+          },
+          {
+            "path": "sw.js",
+            "desc": "オフラインで使うためのサービスワーカー"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-06", "summary": "リポジトリを作成して公開。メモ・画像（追加/ドロップ/貼り付け）・チェックリスト・色・ラベル・固定・アーカイブ・ゴミ箱・検索・バックアップのあるノートサイトを作成", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "メモの方式を作り直し。名前を自由に決められる「〇〇ボックス」、フォルダ（すべてのフォルダ付き）、名前付きメモファイル、複数ページを追加し、ページにテキストボックス・付箋・画像・ペン・マーカー・消しゴム・元に戻すを付けた。以前のメモは「マイボックス › 以前のメモ」へ自動で移行", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "ゴミ箱ボックス、用紙15種類（方眼・白紙・原稿用紙など）と紙の色・横向き、細かい色選び、ペン/マーカーの定規モード、太さを選べる部分消しゴム、範囲選択（色・回転・拡大縮小・固定）、機能アイテム（メモへ移動ボタン・チェックボックス・プルダウン）、タグとURL判定を追加。ドラッグも速くした", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "フォルダ欄を左に寄せ、開いているフォルダを目立つように。定規モードは曲線をなめらかに・角を鋭く。図形（四角・角丸・円・三角・ひし形・星・直線・矢印、塗り付き）を挿入できるようにし、線や図形をクリックで選べて赤いボタンで削除できるようにした", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "付箋どうしを矢印でつなげるようにした（一方向・双方向・線だけ、補足文字・色・太さ・点線、付箋を動かすとついてくる）。範囲選択は、なぞった線を周にして（切れていれば始点と終点を結んで）中に少しでも入るものを全部選ぶ方式に変更", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "ツールの欄（選択・範囲選択など）をドラッグで好きな場所に動かせるようにし、縦並び・横並びの切り替えと元の場所に戻すを追加。テキストボックスと付箋に縦書きを追加", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "文字を入れる前に大きさや色を変えるとテキストボックスが消える不具合を修正。チェックボックスをクリックした場所に置けるようにした", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "チェックボックスの中で Shift+Enter を押すと、下にチェックボックス付きの新しい行ができるようにした", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "チェックボックスの四角が文字より少し上にずれていたのを直し、文字のまん中にそろえた", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "ページのサイズを変えられるようにした（A4・A5・B5・B4・A3・レター・正方形・ワイド16:9・縦長・幅と高さを自由に）", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "付箋にチェックリストを追加（オンにすると1行ごとにチェックボックスが付き、行を足してもチェックがずれない）", "source": "Claude Code" },
-        { "date": "2026-11-06", "summary": "ページの拡大・縮小を追加（🔍ボタン・倍率一覧 25%〜400%・Ctrl+ホイールでカーソル中心に拡大縮小・Ctrl + + / - / 0）", "source": "Claude Code" }
+        {
+          "date": "2026-11-06",
+          "summary": "リポジトリを作成して公開。メモ・画像（追加/ドロップ/貼り付け）・チェックリスト・色・ラベル・固定・アーカイブ・ゴミ箱・検索・バックアップのあるノートサイトを作成",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "メモの方式を作り直し。名前を自由に決められる「〇〇ボックス」、フォルダ（すべてのフォルダ付き）、名前付きメモファイル、複数ページを追加し、ページにテキストボックス・付箋・画像・ペン・マーカー・消しゴム・元に戻すを付けた。以前のメモは「マイボックス › 以前のメモ」へ自動で移行",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "ゴミ箱ボックス、用紙15種類（方眼・白紙・原稿用紙など）と紙の色・横向き、細かい色選び、ペン/マーカーの定規モード、太さを選べる部分消しゴム、範囲選択（色・回転・拡大縮小・固定）、機能アイテム（メモへ移動ボタン・チェックボックス・プルダウン）、タグとURL判定を追加。ドラッグも速くした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "フォルダ欄を左に寄せ、開いているフォルダを目立つように。定規モードは曲線をなめらかに・角を鋭く。図形（四角・角丸・円・三角・ひし形・星・直線・矢印、塗り付き）を挿入できるようにし、線や図形をクリックで選べて赤いボタンで削除できるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "付箋どうしを矢印でつなげるようにした（一方向・双方向・線だけ、補足文字・色・太さ・点線、付箋を動かすとついてくる）。範囲選択は、なぞった線を周にして（切れていれば始点と終点を結んで）中に少しでも入るものを全部選ぶ方式に変更",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "ツールの欄（選択・範囲選択など）をドラッグで好きな場所に動かせるようにし、縦並び・横並びの切り替えと元の場所に戻すを追加。テキストボックスと付箋に縦書きを追加",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "文字を入れる前に大きさや色を変えるとテキストボックスが消える不具合を修正。チェックボックスをクリックした場所に置けるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "チェックボックスの中で Shift+Enter を押すと、下にチェックボックス付きの新しい行ができるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "チェックボックスの四角が文字より少し上にずれていたのを直し、文字のまん中にそろえた",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "ページのサイズを変えられるようにした（A4・A5・B5・B4・A3・レター・正方形・ワイド16:9・縦長・幅と高さを自由に）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "付箋にチェックリストを追加（オンにすると1行ごとにチェックボックスが付き、行を足してもチェックがずれない）",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-06",
+          "summary": "ページの拡大・縮小を追加（🔍ボタン・倍率一覧 25%〜400%・Ctrl+ホイールでカーソル中心に拡大縮小・Ctrl + + / - / 0）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -739,16 +1945,33 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "すべての Mob をプレイヤーに敵対させる Minecraft 26.3 NeoForge 用 Mod（倒した Mob が5%で爆発、ドラゴンの卵を食べられる、村人がゾンビを攻撃して村人に戻す など）。シングルプレイ用。",
-      "tags": ["Java", "NeoForge"],
+      "tags": [
+        "Java",
+        "NeoForge"
+      ],
       "created": "2026-10-12",
-      "links": { "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\hostile-all-mod" },
+      "links": {
+        "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\hostile-all-mod"
+      },
       "code": {
-        "languages": [{ "name": "Java" }],
+        "languages": [
+          {
+            "name": "Java"
+          }
+        ],
         "summary": "Minecraft 26.3 NeoForge 用の Mod なので Java で書き、Gradle でビルドして jar を作る。ソースはローカルのフォルダーにあり、GitHub にはない。"
       },
       "log": [
-        { "date": "2026-10-12", "summary": "Hostile All mod 1.0.0 を作成", "source": "Claude Code" },
-        { "date": "2026-10-13", "summary": "1.4.0 まで更新（村人とゾンビ、魚・イカの陸上がり防止、ネコの攻撃力などを調整）", "source": "Claude Code" }
+        {
+          "date": "2026-10-12",
+          "summary": "Hostile All mod 1.0.0 を作成",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-10-13",
+          "summary": "1.4.0 まで更新（村人とゾンビ、魚・イカの陸上がり防止、ネコの攻撃力などを調整）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -758,15 +1981,28 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "Mob 同士が攻撃し合い、プレイヤーにも敵対する Minecraft 26.3 NeoForge 用 Mod（Hostile All とは同時に使えない）。",
-      "tags": ["Java", "NeoForge"],
+      "tags": [
+        "Java",
+        "NeoForge"
+      ],
       "created": "2026-10-12",
-      "links": { "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\mob-wars-mod" },
+      "links": {
+        "path": "Desktop\\マイクラサーバー\\Modサーバー(NeoForge)\\mob-wars-mod"
+      },
       "code": {
-        "languages": [{ "name": "Java" }],
+        "languages": [
+          {
+            "name": "Java"
+          }
+        ],
         "summary": "Minecraft 26.3 NeoForge 用の Mod なので Java で書き、Gradle でビルドして jar を作る。ソースはローカルのフォルダーにあり、GitHub にはない。"
       },
       "log": [
-        { "date": "2026-10-12", "summary": "Mob Wars mod 1.0.0 を作成", "source": "Claude Code" }
+        {
+          "date": "2026-10-12",
+          "summary": "Mob Wars mod 1.0.0 を作成",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -776,15 +2012,28 @@
       "category": "Minecraft",
       "status": "active",
       "purpose": "初めて入ったときに職業（剣士・アーチャー・白魔導士・黒魔導士・召喚士・忍者）を選び、ステータス・キャラレベル・職業レベル・スキルツリーで育てる Minecraft 26.3 NeoForge 用 Mod。職業は少しずつ増やす予定。",
-      "tags": ["Java", "NeoForge"],
+      "tags": [
+        "Java",
+        "NeoForge"
+      ],
       "created": "2026-10-13",
-      "links": { "path": "Desktop\\自作mod\\開発環境\\shokugyou" },
+      "links": {
+        "path": "Desktop\\自作mod\\開発環境\\shokugyou"
+      },
       "code": {
-        "languages": [{ "name": "Java" }],
+        "languages": [
+          {
+            "name": "Java"
+          }
+        ],
         "summary": "Minecraft 26.3 NeoForge 用の Mod なので Java で書き、Gradle でビルドして jar を作る。ソースはローカルのフォルダーにあり、GitHub にはない。"
       },
       "log": [
-        { "date": "2026-10-13", "summary": "職業 mod 1.0.0 を作成し、1.5.0 まで更新（ステータス、キャラ・職業レベル、スキルツリー、ネザースターでの職業変更、剣士の突進斬り）", "source": "Claude Code" }
+        {
+          "date": "2026-10-13",
+          "summary": "職業 mod 1.0.0 を作成し、1.5.0 まで更新（ステータス、キャラ・職業レベル、スキルツリー、ネザースターでの職業変更、剣士の突進斬り）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -794,15 +2043,29 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "/battle で1対1の PvP 対戦をする Minecraft 26.3 NeoForge 用 Mod（3分制限、本当には死なない、終わると元に戻る、戦績を保存）。",
-      "tags": ["Java", "NeoForge", "PvP"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "PvP"
+      ],
       "created": "2026-10-16",
-      "links": { "path": "Desktop\\自作mod\\バトルmod関係" },
+      "links": {
+        "path": "Desktop\\自作mod\\バトルmod関係"
+      },
       "code": {
-        "languages": [{ "name": "Java" }],
+        "languages": [
+          {
+            "name": "Java"
+          }
+        ],
         "summary": "Minecraft 26.3 NeoForge 用の Mod なので Java で書き、Gradle でビルドして jar を作る。ソースはローカルのフォルダーにあり、GitHub にはない。"
       },
       "log": [
-        { "date": "2026-10-16", "summary": "Battle mod 1.0.0 を作成", "source": "Claude Code" }
+        {
+          "date": "2026-10-16",
+          "summary": "Battle mod 1.0.0 を作成",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -812,15 +2075,29 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "コンピューターとロボットのブロックを追加し、ゲームの中で簡単な言語のプログラムを書いてロボットを動かせる Minecraft 26.3 NeoForge 用 Mod。",
-      "tags": ["Java", "NeoForge", "プログラミング"],
+      "tags": [
+        "Java",
+        "NeoForge",
+        "プログラミング"
+      ],
       "created": "2026-10-18",
-      "links": { "path": "Desktop\\自作mod\\開発環境\\programming" },
+      "links": {
+        "path": "Desktop\\自作mod\\開発環境\\programming"
+      },
       "code": {
-        "languages": [{ "name": "Java" }],
+        "languages": [
+          {
+            "name": "Java"
+          }
+        ],
         "summary": "Minecraft 26.3 NeoForge 用の Mod なので Java で書き、Gradle でビルドして jar を作る。ソースはローカルのフォルダーにあり、GitHub にはない。ゲーム内で使える簡単なプログラミング言語の処理（字句解析・実行）も Java で作っている。"
       },
       "log": [
-        { "date": "2026-10-18", "summary": "Programming mod 1.0.0 を作成（変数・if・while・for・関数・リスト・辞書が使える言語、ロボットの移動・採掘・設置、サンプルとヘルプ）", "source": "Claude Code" }
+        {
+          "date": "2026-10-18",
+          "summary": "Programming mod 1.0.0 を作成（変数・if・while・for・関数・リスト・辞書が使える言語、ロボットの移動・採掘・設置、サンプルとヘルプ）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -830,15 +2107,30 @@
       "category": "Minecraft",
       "status": "done",
       "purpose": "Mod 開発のやり方をまとめた HTML のガイド。",
-      "tags": ["HTML"],
+      "tags": [
+        "HTML"
+      ],
       "created": "2026-10-12",
-      "links": { "path": "Desktop\\自作mod\\Mod開発ガイド.html" },
+      "links": {
+        "path": "Desktop\\自作mod\\Mod開発ガイド.html"
+      },
       "code": {
-        "languages": [{ "name": "HTML" }, { "name": "CSS" }],
+        "languages": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          }
+        ],
         "summary": "1つの HTML ファイルのガイド。"
       },
       "log": [
-        { "date": "2026-10-12", "summary": "Mod開発ガイドを作成", "source": "Claude Code" }
+        {
+          "date": "2026-10-12",
+          "summary": "Mod開発ガイドを作成",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -848,15 +2140,34 @@
       "category": "記録・ツール",
       "status": "active",
       "purpose": "リンク集・メモ・ToDo・サイト表示をまとめた自分用の Chrome 拡張。画面の右端のボタンから開くサイドバーと、新しいタブのページ（時計・検索・リンク）を追加する。",
-      "tags": ["Chrome拡張", "JavaScript"],
+      "tags": [
+        "Chrome拡張",
+        "JavaScript"
+      ],
       "created": "2026-11-06",
-      "links": { "path": "Desktop\\自作mod\\modリポジトリ\\chrome-sidebar" },
+      "links": {
+        "path": "Desktop\\自作mod\\modリポジトリ\\chrome-sidebar"
+      },
       "code": {
-        "languages": [{ "name": "JavaScript" }, { "name": "HTML" }, { "name": "CSS" }],
+        "languages": [
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          }
+        ],
         "summary": "Chrome 拡張。manifest.json で拡張を定義し、サイドバーと新しいタブのページを HTML・CSS・JavaScript で作っている。"
       },
       "log": [
-        { "date": "2026-11-06", "summary": "マイサイドバーを作成し、1.9.0 まで更新（サイドバーを右端に、幅を変えられる、サイト表示と検索、メモの文字の大きさ・太さ、ToDo の期限・優先度・並べ替え）", "source": "Claude Code" }
+        {
+          "date": "2026-11-06",
+          "summary": "マイサイドバーを作成し、1.9.0 まで更新（サイドバーを右端に、幅を変えられる、サイト表示と検索、メモの文字の大きさ・太さ、ToDo の期限・優先度・並べ替え）",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -866,25 +2177,71 @@
       "category": "ゲーム",
       "status": "active",
       "purpose": "夜空の浮島でクリスタルを集め、追ってくるトゲ玉を避けるブラウザ用の3Dアクションゲーム（Three.js製）。",
-      "tags": ["Three.js", "3Dゲーム", "Artifact", "Electron"],
+      "tags": [
+        "Three.js",
+        "3Dゲーム",
+        "Artifact",
+        "Electron"
+      ],
       "created": "2026-11-09",
-      "links": { "repo": "https://github.com/Lumiere2110/ukishima-crystal", "site": "https://lumiere2110.github.io/ukishima-crystal/", "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/ukishima-crystal",
+        "site": "https://lumiere2110.github.io/ukishima-crystal/",
+        "artifact": "https://claude.ai/artifact/E8tckEhvuxBpu5DwTar4Y6"
+      },
       "code": {
-        "languages": [{ "name": "HTML", "pct": 96.6 }, { "name": "JavaScript", "pct": 3.4 }],
+        "languages": [
+          {
+            "name": "HTML",
+            "pct": 96.6
+          },
+          {
+            "name": "JavaScript",
+            "pct": 3.4
+          }
+        ],
         "summary": "Three.js で描く3Dゲーム。ゲームは index.html にまとめ、Electron で Windows アプリとしても動かす。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "index.html", "desc": "ゲーム本体（3D の描画・操作・当たり判定・スコア）" },
-          { "path": "main.js", "desc": "Electron でウィンドウを開く起動処理" },
-          { "path": "vendor/three.min.js", "desc": "同梱した Three.js（オフラインで動かすため）" },
-          { "path": "package.json", "desc": "Electron の設定" }
+          {
+            "path": "index.html",
+            "desc": "ゲーム本体（3D の描画・操作・当たり判定・スコア）"
+          },
+          {
+            "path": "main.js",
+            "desc": "Electron でウィンドウを開く起動処理"
+          },
+          {
+            "path": "vendor/three.min.js",
+            "desc": "同梱した Three.js（オフラインで動かすため）"
+          },
+          {
+            "path": "package.json",
+            "desc": "Electron の設定"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-09", "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "ポートフォリオサイト(my_web)の作品一覧にカードを追加し、ブラウザ版へ移動できるようにした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "Windows アプリ版を zip にして GitHub Releases に v1.0.0 として公開し、README にダウンロードの案内を追加", "source": "Claude Code" }
+        {
+          "date": "2026-11-09",
+          "summary": "Three.js で3Dゲームを作成。WASD/矢印で移動・Spaceでジャンプ、5個ごとにレベルアップしてトゲ玉が増える。スマホのタッチ操作とベスト記録の保存に対応",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "公開リポジトリと GitHub Pages を作成。Electron で Windows アプリ(exe)としても起動できるようにし、three.js を同梱してオフラインでも遊べるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "ポートフォリオサイト(my_web)の作品一覧にカードを追加し、ブラウザ版へ移動できるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "Windows アプリ版を zip にして GitHub Releases に v1.0.0 として公開し、README にダウンロードの案内を追加",
+          "source": "Claude Code"
+        }
       ]
     },
     {
@@ -894,36 +2251,190 @@
       "category": "ゲーム",
       "status": "active",
       "purpose": "みんなでオンライン対戦・協力プレイできるオリジナル3Dミニゲーム集（Godot製のアプリ）。ソースコードには初心者向けの日本語メモ付き。",
-      "tags": ["Godot", "GDScript", "3Dゲーム", "オンライン"],
+      "tags": [
+        "Godot",
+        "GDScript",
+        "3Dゲーム",
+        "オンライン"
+      ],
       "created": "2026-11-09",
-      "links": { "repo": "https://github.com/Lumiere2110/freedom-land", "site": "https://lumiere2110.github.io/freedom-land/" },
+      "links": {
+        "repo": "https://github.com/Lumiere2110/freedom-land",
+        "site": "https://lumiere2110.github.io/freedom-land/"
+      },
       "code": {
-        "languages": [{ "name": "GDScript", "pct": 100.0 }],
+        "languages": [
+          {
+            "name": "GDScript",
+            "pct": 100
+          }
+        ],
         "summary": "Godot 4 のプロジェクト。処理はすべて GDScript で書き、広場・通信・ミニゲームごとにスクリプトを分けている。Web 版は docs/ に書き出している。",
         "basis": "GitHub のファイル構成から集計",
         "files": [
-          { "path": "project.godot", "desc": "Godot プロジェクトの設定" },
-          { "path": "scripts/main.gd", "desc": "起動処理（hub.gd は広場とポータル）" },
-          { "path": "scripts/net.gd", "desc": "ENet を使ったオンライン通信（room.gd は部屋の管理）" },
-          { "path": "scripts/player.gd", "desc": "プレイヤーの操作" },
-          { "path": "scripts/base_game.gd", "desc": "ミニゲーム共通の処理" },
-          { "path": "scripts/games/", "desc": "ミニゲーム本体（coin_rush.gd・bump_ring.gd・panel_drop.gd など）" },
-          { "path": "docs/", "desc": "Web 版として書き出したもの" }
+          {
+            "path": "project.godot",
+            "desc": "Godot プロジェクトの設定"
+          },
+          {
+            "path": "scripts/main.gd",
+            "desc": "起動処理（hub.gd は広場とポータル）"
+          },
+          {
+            "path": "scripts/net.gd",
+            "desc": "ENet を使ったオンライン通信（room.gd は部屋の管理）"
+          },
+          {
+            "path": "scripts/player.gd",
+            "desc": "プレイヤーの操作"
+          },
+          {
+            "path": "scripts/base_game.gd",
+            "desc": "ミニゲーム共通の処理"
+          },
+          {
+            "path": "scripts/games/",
+            "desc": "ミニゲーム本体（coin_rush.gd・bump_ring.gd・panel_drop.gd など）"
+          },
+          {
+            "path": "docs/",
+            "desc": "Web 版として書き出したもの"
+          }
         ]
       },
       "log": [
-        { "date": "2026-11-09", "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした", "source": "Claude Code" },
-        { "date": "2026-11-09", "summary": "GitHub Releases に v1.0.0 として FreedomLand.exe を公開し、README にダウンロードの案内を追加。ポートフォリオサイトからダウンロードページへ移動できるようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "ミニゲーム「浮島クリスタル」を削除し、新しいミニゲーム「ぐるぐるバー」(回るバーをジャンプでよける対戦)を追加。タイトル画面を作り直し、「プレイ」でゲーム一覧(ひとり+CPUですぐ遊べる)、「オンライン」で部屋を作る・入るを選べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "新しい exe を GitHub Releases に v1.1.0 として公開(ダウンロードページの最新版を更新)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "浮島クリスタルが入っていた古いリリース v1.0.0 とそのタグを削除。ダウンロードページは v1.1.0 だけになった", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "スマホ対応: ブラウザ版を docs/ に書き出して GitHub Pages で公開(ひとり+CPU)。ホーム画面に追加するとアプリになる(PWA)。画面の移動スティック・ジャンプ・ダッシュボタン、縦向きの案内、日本語フォント同梱。ポーズメニュー(Esc/P/スタート/II)と CPU のつよさ(よわい・ふつう・つよい)も追加", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "ポーズ・CPUのつよさ入りの新しい exe を GitHub Releases に v1.2.0 として公開(最新版)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "チーム5対5のレーンバトル「Bond」を追加。上・下レーンに2人ずつ+中央にエース、こうげきで敵をたおすとチームに得点(エースは2点)、5秒で基地から復活。ブラウザ版にも入れ、スマホに「こうげき」ボタンを追加", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "Bond 入りの新しい exe を GitHub Releases に v1.3.0 として公開(最新版)", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "「プレイ」でタイトルの空島に行き、ポータルでゲームを選ぶ形に変更。「オンライン」はルームを作成(6文字のパスワードを表示)/ルームに参加(パスワード入力)に。通信を ENet から WebRTC(接続の受け渡しは公開 MQTT ブローカー)に変え、ブラウザ版(スマホ)もオンライン対戦でき、パソコン版と同じルームで遊べるようにした", "source": "Claude Code" },
-        { "date": "2026-11-10", "summary": "パスワード方式の新しいパソコン版を GitHub Releases に v1.4.0 として公開(最新版)。オンライン用の dll が増えたので、exe と dll を FreedomLand-win64.zip にまとめた", "source": "Claude Code" }
+        {
+          "date": "2026-11-09",
+          "summary": "Godot 4.7 で作成。広場のポータルから選ぶミニゲーム4つ（コインラッシュ・ぶつかりリング・ぬけおちパネル・浮島クリスタル）、ENet で最大8人のオンライン対戦、足りない人数を埋めるCPUを入れた",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "Godot の書き出し用テンプレートを入れ、Windows 用の exe(FreedomLand.exe、ゲームを1ファイルに同梱)を書き出せるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-09",
+          "summary": "GitHub Releases に v1.0.0 として FreedomLand.exe を公開し、README にダウンロードの案内を追加。ポートフォリオサイトからダウンロードページへ移動できるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "ミニゲーム「浮島クリスタル」を削除し、新しいミニゲーム「ぐるぐるバー」(回るバーをジャンプでよける対戦)を追加。タイトル画面を作り直し、「プレイ」でゲーム一覧(ひとり+CPUですぐ遊べる)、「オンライン」で部屋を作る・入るを選べるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "新しい exe を GitHub Releases に v1.1.0 として公開(ダウンロードページの最新版を更新)",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "浮島クリスタルが入っていた古いリリース v1.0.0 とそのタグを削除。ダウンロードページは v1.1.0 だけになった",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "スマホ対応: ブラウザ版を docs/ に書き出して GitHub Pages で公開(ひとり+CPU)。ホーム画面に追加するとアプリになる(PWA)。画面の移動スティック・ジャンプ・ダッシュボタン、縦向きの案内、日本語フォント同梱。ポーズメニュー(Esc/P/スタート/II)と CPU のつよさ(よわい・ふつう・つよい)も追加",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "ポーズ・CPUのつよさ入りの新しい exe を GitHub Releases に v1.2.0 として公開(最新版)",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "チーム5対5のレーンバトル「Bond」を追加。上・下レーンに2人ずつ+中央にエース、こうげきで敵をたおすとチームに得点(エースは2点)、5秒で基地から復活。ブラウザ版にも入れ、スマホに「こうげき」ボタンを追加",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "Bond 入りの新しい exe を GitHub Releases に v1.3.0 として公開(最新版)",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "「プレイ」でタイトルの空島に行き、ポータルでゲームを選ぶ形に変更。「オンライン」はルームを作成(6文字のパスワードを表示)/ルームに参加(パスワード入力)に。通信を ENet から WebRTC(接続の受け渡しは公開 MQTT ブローカー)に変え、ブラウザ版(スマホ)もオンライン対戦でき、パソコン版と同じルームで遊べるようにした",
+          "source": "Claude Code"
+        },
+        {
+          "date": "2026-11-10",
+          "summary": "パスワード方式の新しいパソコン版を GitHub Releases に v1.4.0 として公開(最新版)。オンライン用の dll が増えたので、exe と dll を FreedomLand-win64.zip にまとめた",
+          "source": "Claude Code"
+        }
+      ]
+    },
+    {
+      "id": "joho-game",
+      "name": "情報ゲーム",
+      "type": "repo",
+      "category": "ゲーム",
+      "status": "active",
+      "purpose": "情報系の知識（データベース・アルゴリズム・ネットワーク・セキュリティ・バックアップ・プロジェクト管理・法務）を使って、会社や街の情報システムを企画・設計・開発・運用するストラテジーゲーム。知識を深め技術を身につけることと、楽しむことが目的。今後も分野を広げていく。",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "ストラテジー",
+        "学習",
+        "GitHub Pages"
+      ],
+      "created": "2026-11-13",
+      "links": {
+        "repo": "https://github.com/Lumiere2110/joho-game",
+        "site": "https://lumiere2110.github.io/joho-game/"
+      },
+      "code": {
+        "languages": [
+          {
+            "name": "TypeScript",
+            "pct": 91.5
+          },
+          {
+            "name": "CSS",
+            "pct": 7.5
+          },
+          {
+            "name": "HTML",
+            "pct": 1
+          }
+        ],
+        "summary": "TypeScript + React + Vite のブラウザゲーム。ゲームのロジック（src/core）は画面から切り離した純粋な関数で、計算量・待ち行列・稼働率・RPO/RTO などの実際の式で結果を計算する。Vitest でボットが自動プレイしてテストする。GitHub Actions で Pages に公開。",
+        "basis": "ローカルのファイル構成から集計",
+        "files": [
+          {
+            "path": "src/core/game.ts",
+            "desc": "すべての操作（アクション）とゲーム進行の reducer"
+          },
+          {
+            "path": "src/core/sim.ts",
+            "desc": "1週間ごとの開発・運用シミュレーション（故障・攻撃・負荷）"
+          },
+          {
+            "path": "src/core/calc.ts",
+            "desc": "性能・稼働率・バックアップ・費用の計算式"
+          },
+          {
+            "path": "src/core/cases/",
+            "desc": "案件データ（図書館・通販会社・クリニック）"
+          },
+          {
+            "path": "src/core/glossary.ts",
+            "desc": "用語集（86語）"
+          },
+          {
+            "path": "src/ui/",
+            "desc": "フェーズごとの画面（調査・要件定義・設計・開発・運用・完了）"
+          }
+        ]
+      },
+      "log": [
+        {
+          "date": "2026-11-13",
+          "summary": "リポジトリを作成し v0.1 を公開。調査→要件定義→設計→開発→運用→完了の6フェーズ、案件3つ（みどり市立図書館・ハルカゼ通販・さくら内科クリニック）、用語集86語、DB正規化パズル・計算量・M/M/1・稼働率・バックアップ・個人情報保護法などの仕組みを実装",
+          "source": "Claude Code"
+        }
       ]
     }
   ]
