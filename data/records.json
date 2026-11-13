@@ -236,7 +236,8 @@
         { "date": "2026-11-05", "summary": "2.8.5〜2.8.13: 跳躍・速射・ハイジャンプ・フラッシュ・瞬身・フロントアロー・チャージショット・重力のアイコン追加、ジャンプ台を強化", "source": "GitHub" },
         { "date": "2026-11-05", "summary": "2.8.14〜2.8.15: 瞬身をストックスキルに、/weather で新しい天気、狙撃とアローレインを調整", "source": "GitHub" },
         { "date": "2026-11-05", "summary": "2.9.0: 技キーR・技名表示・スロット複数選択、反転/反響/時間/怪盗/法律の調整と修正", "source": "GitHub" },
-        { "date": "2026-11-13", "summary": "2.9.2: 未開発の能力に「範囲」を追加", "source": "GitHub" }
+        { "date": "2026-11-13", "summary": "2.9.2: 未開発の能力に「範囲」を追加", "source": "GitHub" },
+        { "date": "2026-11-13", "summary": "2.9.3: 索敵系・イリュージョナー/ジャイアントのスポーン・寄生(未開発)・守護/再生/封印(抑制・封眼)の調整・捕食のMobの力の入切と調整・反響の時穿剣", "source": "GitHub" }
       ]
     },
     {
@@ -408,7 +409,7 @@
       "tags": ["Artifact", "NeoForge", "ドキュメント"],
       "created": "2026-11-06",
       "links": { "artifact": "https://claude.ai/artifact/7cePxvh412wVXYc2AeRku6", "site": "https://lumiere2110.github.io/mod-site/textbook/nouryoku.html" },
-      "log": [ { "date": "2026-11-06", "summary": "教科書を作成（全9章・57能力・技スロットの技166・Mobの力77。検索・目次・ダーク表示つき）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "ソースから自動で作るツール（nouryoku の tools/textbook）を追加。今後はアップデートごとに作り直して同じURLに公開する", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "技・能力・状態異常・天気のアイコンを表示（画像のない技はゲームと同じ仮のアイコン）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "文字を大きくし、横幅を広げた（最大1640px）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "横幅を最大1960pxに広げ、スクロールバーを太く（20px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーをさらに太く（34px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "配布サイト（GitHub Pages）に公開版を置いて、だれでも見られるようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーの太さがほかの CSS に消されないようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "Firefox でも太いスクロールバーが出るようにした（自前のスクロールバー）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーを少し細く（34px→24px）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.2 に合わせて作り直した（未開発に「範囲」）", "source": "Claude Code" } ]
+      "log": [ { "date": "2026-11-06", "summary": "教科書を作成（全9章・57能力・技スロットの技166・Mobの力77。検索・目次・ダーク表示つき）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "ソースから自動で作るツール（nouryoku の tools/textbook）を追加。今後はアップデートごとに作り直して同じURLに公開する", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "技・能力・状態異常・天気のアイコンを表示（画像のない技はゲームと同じ仮のアイコン）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "文字を大きくし、横幅を広げた（最大1640px）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "横幅を最大1960pxに広げ、スクロールバーを太く（20px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーをさらに太く（34px）した", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "配布サイト（GitHub Pages）に公開版を置いて、だれでも見られるようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーの太さがほかの CSS に消されないようにした", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "Firefox でも太いスクロールバーが出るようにした（自前のスクロールバー）", "source": "Claude Code" }, { "date": "2026-11-06", "summary": "スクロールバーを少し細く（34px→24px）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.2 に合わせて作り直した（未開発に「範囲」）", "source": "Claude Code" }, { "date": "2026-11-13", "summary": "2.9.3 に合わせて作り直した（索敵系・封眼・捕食・時穿剣）", "source": "Claude Code" } ]
     },
     {
       "id": "local-minecraft-server",
