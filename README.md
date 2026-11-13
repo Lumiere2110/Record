@@ -46,6 +46,11 @@ Claude Code のどのセッションからでも「Record に今日の作業を�
     "artifact": "https://claude.ai/artifact/...",
     "path": "Desktop\\..."
   },
+  "code": {
+    "languages": [{ "name": "JavaScript", "pct": 80 }, { "name": "CSS", "pct": 20 }],
+    "summary": "ソースコードの構成の説明",
+    "files": [{ "path": "js/app.js", "desc": "このファイルの役割" }]
+  },
   "log": [
     { "date": "2026-11-06", "summary": "やったこと", "source": "Claude Code" }
   ]
@@ -58,6 +63,7 @@ Claude Code のどのセッションからでも「Record に今日の作業を�
 | `type` | `repo`（リポジトリ）/ `artifact` / `local`（PC 内だけのもの） |
 | `status` | `active`（作業中）/ `done`（完成）/ `paused`（休止） |
 | `links` | 使うものだけ書けばよい |
+| `code` | 使っている言語と割合・ソースの構成・主なファイルの役割（詳細画面の「ソースコード」に表示） |
 | `log` | 作業記録。`source` は `Claude Code` / `GitHub` / `Artifact` など |
 
 ### 既存の作品に作業を足す

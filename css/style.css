@@ -134,4 +134,18 @@ code { font-size: .9em; background: var(--chip-bg); padding: .1em .35em; border-
 .detail .steps li, .detail .memo { border-bottom: 0; }
 .detail .logs li { padding: 8px 0; border-bottom: 1px solid var(--line); }
 
+.lang-chip { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
+.lang-chip i, .langs i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.langbar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 6px 0 8px; background: var(--chip-bg); }
+.langbar span { min-width: 2px; }
+.detail ul.langs { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 0; margin: 0 0 6px; font-size: .88rem; }
+.detail ul.langs li { display: inline-flex; align-items: center; gap: 5px; padding: 0; border: 0; }
+.langs span { color: var(--muted); font-variant-numeric: tabular-nums; }
+.code-basis { color: var(--muted); font-size: .8rem; margin: 4px 0; }
+.files { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 4px 0; }
+.files td { border-top: 1px solid var(--line); padding: 6px 8px 6px 0; vertical-align: top; }
+.files td:first-child { width: 40%; overflow-wrap: anywhere; }
+.files code { font-size: .82rem; }
+@media (max-width: 560px) { .files td { display: block; width: auto !important; border-top: 0; padding: 0; } .files tr { display: block; border-top: 1px solid var(--line); padding: 6px 0; } }
+
 .footer { color: var(--muted); font-size: .85rem; padding-top: 40px; padding-bottom: 40px; }

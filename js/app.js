@@ -5,7 +5,7 @@
   const TOKEN_KEY = 'record.githubToken';
   const TYPES = { repo: 'リポジトリ', artifact: 'Artifact', local: 'ローカル' };
   const STATUS = { active: '作業中', done: '完成', paused: '休止' };
-  const state = { items: [], type: 'all', category: 'all', q: '', sort: 'updated', view: 'list', openId: null, editing: null };
+  const state = { items: [], type: 'all', category: 'all', lang: 'all', q: '', sort: 'updated', view: 'list', openId: null, editing: null };
   const $ = (s) => document.querySelector(s);
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -83,6 +83,7 @@
     });
     fillCategories();
     $('#category').addEventListener('change', (e) => { state.category = e.target.value; render(); });
+    $('#lang').addEventListener('change', (e) => { state.lang = e.target.value; render(); });
     $('#sort').addEventListener('change', (e) => { state.sort = e.target.value; render(); });
     $('#q').addEventListener('input', (e) => { state.q = e.target.value.trim().toLowerCase(); render(); });
     document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => {
@@ -104,14 +105,17 @@
   function fillCategories() {
     const cats = [...new Set(state.items.map((i) => i.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ja'));
     $('#category').innerHTML = `<option value="all">カテゴリ: すべて</option>` + cats.map((c) => `<option${c === state.category ? ' selected' : ''}>${esc(c)}</option>`).join('');
+    const langs = [...new Set(state.items.flatMap(langsOf))].sort((a, b) => a.localeCompare(b));
+    $('#lang').innerHTML = `<option value="all">言語: すべて</option>` + langs.map((l) => `<option${l === state.lang ? ' selected' : ''}>${esc(l)}</option>`).join('');
   }
 
   function filtered() {
     return state.items.filter((it) => {
       if (state.type !== 'all' && it.type !== state.type) return false;
       if (state.category !== 'all' && it.category !== state.category) return false;
+      if (state.lang !== 'all' && !langsOf(it).includes(state.lang)) return false;
       if (!state.q) return true;
-      const hay = [it.name, it.purpose, it.category, it.notes, ...(it.tags || []), ...(it.log || []).map((l) => l.summary), ...(it.memos || []).map((m) => m.text)].join(' ').toLowerCase();
+      const hay = [it.name, it.purpose, it.category, it.notes, ...(it.tags || []), ...(it.log || []).map((l) => l.summary), ...(it.memos || []).map((m) => m.text), ...langsOf(it), it.code?.summary, ...(it.code?.files || []).map((f) => f.path + ' ' + f.desc)].join(' ').toLowerCase();
       return hay.includes(state.q);
     });
   }
@@ -138,6 +142,7 @@
     return `<div class="meta"><span class="badge ${it.type}">${TYPES[it.type] || it.type}</span>`
       + (it.category ? `<span class="tag">${esc(it.category)}</span>` : '')
       + (it.status ? `<span class="status">${STATUS[it.status] || esc(it.status)}</span>` : '')
+      + (langsOf(it)[0] ? `<span class="lang-chip"><i style="background:${langColor(langsOf(it)[0])}"></i>${esc(langsOf(it)[0])}</span>` : '')
       + ((it.memos || []).length ? `<span class="memo-count">メモ ${it.memos.length}</span>` : '')
       + `</div>`;
   }
@@ -169,6 +174,34 @@
       </div>`).join('');
   }
 
+  // ---- languages / source code ----
+  const LANG_COLORS = {
+    JavaScript: '#d4a72c', HTML: '#e34c26', CSS: '#663399', Java: '#b07219', GDScript: '#478cbf',
+    PowerShell: '#3b6db5', Batch: '#5a8a3a', Shell: '#4f9a3c', YAML: '#cb171e', Markdown: '#5c6b7a',
+    mcfunction: '#8a5a2b', Perl: '#0298c3', 'Gradle (Groovy)': '#02303a', TOML: '#9c4221', Python: '#3572a5',
+  };
+  const langColor = (n) => LANG_COLORS[n] || '#8b8b8b';
+  const langsOf = (it) => (it.code?.languages || []).map((l) => l.name);
+  function codeHtml(it) {
+    const c = it.code; if (!c) return '';
+    const langs = c.languages || [];
+    const hasPct = langs.some((l) => l.pct != null);
+    const repo = !it.private && it.links?.repo;
+    const fileLink = (p) => {
+      if (!repo || p.startsWith('…')) return `<code>${esc(p)}</code>`;
+      const url = `${repo}/${p.endsWith('/') ? 'tree' : 'blob'}/HEAD/${p.split('/').map(encodeURIComponent).join('/')}`;
+      return `<a href="${esc(url)}" target="_blank" rel="noopener"><code>${esc(p)}</code></a>`;
+    };
+    return `
+      <h3>ソースコード</h3>
+      ${hasPct ? `<div class="langbar" role="img" aria-label="${esc(langs.map((l) => `${l.name} ${l.pct}%`).join('、'))}">${langs.map((l) => `<span style="width:${l.pct}%;background:${langColor(l.name)}"></span>`).join('')}</div>` : ''}
+      <ul class="langs">${langs.map((l) => `<li><i style="background:${langColor(l.name)}"></i>${esc(l.name)}${l.pct != null ? ` <span>${l.pct}%</span>` : ''}</li>`).join('')}</ul>
+      ${c.basis ? `<p class="code-basis">${esc(c.basis)}（画像・ライブラリ・自動生成ファイルは除く）</p>` : ''}
+      <p>${esc(c.summary)}</p>
+      ${(c.files || []).length ? `<table class="files"><tbody>${c.files.map((f) => `<tr><td>${fileLink(f.path)}</td><td>${esc(f.desc)}</td></tr>`).join('')}</tbody></table>` : ''}
+      ${repo ? `<p class="code-basis"><a href="${esc(repo)}" target="_blank" rel="noopener">GitHub ですべてのソースを見る</a></p>` : ''}`;
+  }
+
   // ---- detail ----
   function openDetail(id) {
     const it = state.items.find((i) => i.id === id); if (!it) return;
@@ -189,6 +222,7 @@
       <h3>目的</h3><p>${esc(it.purpose)}</p>
       ${it.notes ? `<p class="notes">${esc(it.notes)}</p>` : ''}
       ${(it.tags || []).length ? `<div class="meta">${it.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>` : ''}
+      ${codeHtml(it)}
       <h3>メモ（${(it.memos || []).length}件）</h3>
       <div id="memoArea">${memoHtml(it)}</div>
       <h3>作業記録（${logs.length}件）</h3>

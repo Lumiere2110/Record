@@ -4,6 +4,7 @@
 - 記録はすべて `data/records.json`。サイト本体（index.html / js / css）は記録の追加では触らない。
 - 作業を記録するときは、該当する item の `log` に `{ "date": "YYYY-MM-DD", "summary": "...", "source": "Claude Code" }` を足し、先頭の `updated` を今日にする。新しい作品なら README の形式で item を追加する。
 - summary は日本語で、何をしたか・何が変わったかを1〜2文で。
+- `code` はソースコードの説明（`languages`: 言語と割合、`summary`: 構成の説明、`files`: 主なファイルとその役割）。新しい作品を足すときや構成が大きく変わったときは更新する。割合は GitHub のファイルサイズから集計（画像・ライブラリ・自動生成ファイル・gradlew は除く）。
 - `memos` はユーザーがサイトから書くメモ（`{ "id", "date", "text", "edited"? }`）。頼まれない限り編集・削除しない。
 - 非公開リポジトリは `"private": true` を付け、`links.repo` は書かない（このサイトは公開）。
 - 編集後は JSON として正しいか確認してから commit・push する。
